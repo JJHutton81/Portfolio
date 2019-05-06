@@ -10,7 +10,7 @@ export default class Header extends Component {
             <div class="headerBody">
                 <div class="headWrapper">
                     <div class="innerHead">
-                      {/* <img class='headBG' src={HeadBackground} alt="Close up of concrete." />; */}
+                      <h1 class="title">James Hutton's Portfolio</h1>
                     </div>
                 </div>
             </div>
