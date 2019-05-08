@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import HeadBackground from '../../media/headBackground.jpg'
-
 import './header.css';
 
 export default class Header extends Component {
