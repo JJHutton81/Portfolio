@@ -50,3 +50,55 @@ table {
 .App {
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(109,114,117,0.6477941518404237) 23%, rgba(199,214,213,1) 100%);
 }
+
+
+.fade-enter {
+    opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 300s ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 300s ease-in;
+}
+
+/* slideTransition.scss */
+
+/* old page exiting, hides it underneath (bottom)  */
+.pageSlider-exit > .page {
+  z-index: 1;
+}
+/* new page entering, show it on top */
+.pageSlider-enter > .page {
+  z-index: 10;
+}
+/* LEFT transition transform 100% to the right */
+.pageSlider-enter.left > .page {
+  transform: translate3d(100%, 0, 0);
+}
+/* RIGHT transition transform -100% to the left */
+.pageSlider-enter.right > .page {
+  transform: translate3d(-100%, 0, 0);
+}
+/* old exit left direction */
+.pageSlider-exit.left > .page {
+  transform: translate3d(-100%, 0, 0);
+}
+/* old exit right direction  */
+.pageSlider-exit.right > .page {
+  transform: translate3d(100%, 0, 0);
+}
+/* Enter is active (Page has finished transitioning) make it settle down  */
+.pageSlider-enter.pageSlider-enter-active > .page {
+  transform: translate3d(0, 0, 0);
+  /* Apply all transitions  */
+  transition: all 800ms ease-in-out;
+}

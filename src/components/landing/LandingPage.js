@@ -7,7 +7,22 @@ import './landing.css';
 
 
 export default class LandingPange extends Component {
-    render() {
+  constructor() {
+    super();
+
+    this.state = {
+      isActive: true
+    };
+  }
+
+  ToggleClass = (e) => {
+    this.setState({ isActive: !this.state.isActive})
+  }
+
+  render() {
+
+    let btn_class = this.state.notFall ? "landingButton" : "fall";
+
       return (
           <div class='LPBody'>
             <div class='element'></div>
@@ -19,8 +34,10 @@ export default class LandingPange extends Component {
                   <h1 class='landingTitle'>Coding is my Life.</h1>
                   <h1 class='landingTitle'>UI/UX is my Love.</h1>
                   <div class='buttonWrap'>
-                    <Link to='/projects'>  
-                      <button class='landingButton'>  
+                    <Link to='/projects'> 
+                      <button
+                        className={(this.state.isActive) ? 'landingButton' : 'fall'}
+                        onClick={this.ToggleClass}> 
                         <p class='pButt'>See my work</p>  
                       </button>
                     </Link>
@@ -32,4 +49,5 @@ export default class LandingPange extends Component {
           </div>
       )
     }
-}
+    }
+  
