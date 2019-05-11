@@ -1,0 +1,144 @@
+.MBodyWrap {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    position: fixed;
+}
+
+.RedInvertLower {
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    border-left: 40px solid #C20114;
+    border-top-left-radius: 121px;
+    position: absolute;
+    top: 117px;   
+}
+
+.RedInvertUpper {
+  width: 100%;
+  margin: 0 auto;
+  border-top: 0.5px solid #C20114;
+  border-left: 40px solid #C20114;
+  border-top-left-radius: 121px;
+  position: absolute;
+  top: 117px;   
+}
+
+.SubWrap {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(17, 15, 15);
+    border-top: 3px solid #C20114;
+    border-bottom: 3px solid #C20114;
+    border-right: 40px solid #C20114;
+    border-bottom-right-radius: 121px;
+    border-bottom-left-radius: 121px;
+}
+
+.LinkWrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 80%;
+}
+  
+  .container {
+    width: 550px;
+    margin: 80px auto;
+    text-align: center;
+  }
+  
+  .container > .button { margin: 0 10px; }
+  
+  .button {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    line-height: 18px;
+    padding: 5px;
+    margin: 10%;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px #154c86;
+    background-color: #247edd;
+    background-clip: padding-box;
+    border: 1px solid;
+    border-color: #1c65b2 #18589c #18589c;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.4), 0 1px 2px rgba(0, 0, 0, 0.2);
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.12) 51%, rgba(0, 0, 0, 0.04));
+  }
+  
+  .button:before {
+    content: '';
+    position: absolute;
+    top: -25%;
+    bottom: -25%;
+    left: -20%;
+    right: -20%;
+    border-radius: 50%;
+    background: transparent;
+    -webkit-box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+  }
+  
+  .button:hover { background-color: #1a74d3; }
+  
+  .button:active {
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 -1px #154c86;
+    background: #1f71c8;
+    border-color: #113f70 #154c86 #1c65b2;
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.4);
+    background-image: -webkit-linear-gradient(top, #1a5da5, #3a8be0);
+    background-image: -moz-linear-gradient(top, #1a5da5, #3a8be0);
+    background-image: -o-linear-gradient(top, #1a5da5, #3a8be0);
+    background-image: linear-gradient(to bottom, #1a5da5, #3a8be0);
+  }
+  
+  .button:active:before {
+    top: -50%;
+    bottom: -125%;
+    left: -15%;
+    right: -15%;
+    -webkit-box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 96px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button-red {
+    text-shadow: 0 1px #72100d;
+    background-color: rgb(0, 0, 0);
+    border-color: #9f1713 #891310 #891310;
+  }
+  
+  .button-red:hover { background-color: #808080; }
+  
+  .button-red:active {
+    text-shadow: 0 -1px #72100d;
+    background: #b61a15;
+    border-color: #5b0d0b #72100d #9f1713;
+    background-image: -webkit-linear-gradient(top, #921511, #e4201b);
+    background-image: -moz-linear-gradient(top, #921511, #e4201b);
+    background-image: -o-linear-gradient(top, #921511, #e4201b);
+    background-image: linear-gradient(to bottom, #921511, #e4201b);
+  }
+  

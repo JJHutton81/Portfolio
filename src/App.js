@@ -1,16 +1,25 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import Header from './components/header/Header';
 import HomeBody from './components/homeBody/HomeBody';
+import AboutMe from './components/aboutPages/AboutMe';
+import Skills from './components/menu/Menu';
+import Contact from './components/contact/Contact';
+import LandingPage from './components/landing/LandingPage';
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <HomeBody />
-    </div>
+    <Router className="App">
+      <Switch>
+        <Route exact path='/' component={LandingPage} />
+        <Route path='/projects' component={HomeBody} />
+        <Route path='/aboutme' component={AboutMe} />
+        <Route path='/skills' component={Skills} />
+        <Route path='/contact' component={Contact} />
+      </Switch>
+    </Router>
   );
 }
 
