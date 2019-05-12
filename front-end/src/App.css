@@ -59,6 +59,7 @@ table {
 .fade-enter.fade-enter-active {
     opacity: 1;
     transition: opacity 300s ease-in;
+    position: absolute;
 }
 
 .fade-exit {

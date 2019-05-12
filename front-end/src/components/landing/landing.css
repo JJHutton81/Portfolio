@@ -83,6 +83,7 @@
     font-size: 3rem;
     color: wheat;
     font-family: 'Stylish', sans-serif;
+    text-align: center;
 }
 
 .buttonWrap {
@@ -102,7 +103,7 @@
     align-items: center;
 }
 
-.landingButton {
+  .landingButton {
 	background-color: transparent;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -116,10 +117,47 @@
 	font-weight: bold;
 	padding: 3%;
     text-decoration: none;
-}
+  }
 
-.fall{
-  display:none;
+  .fall{
+    background-color: wheat;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 5px solid wheat;
+	display: inline-block;
+	cursor: pointer;
+	color: #001F3F;
+	font-family: 'Stylish', sans-serif;
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 3%;
+    text-decoration: none;  
+    animation: drop 1.2s forwards;
+  }
+  @keyframes drop {
+    0% {
+      transform-origin: center;
+      opacity: 1;
+    }
+    20% {
+      transform: 
+        translate3d(0, 20px, 0)
+        rotate3d(0, 0, 1, -10deg);
+      opacity: 1;
+    }
+    40%, 45% {
+      transform: 
+        translate3d(0, -120px, 0)
+        rotate3d(0, 0, 1, 10deg);
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+      transform: 
+        translate3d(0, 2000px, 0)
+        rotate3d(0, 0, 1, 10deg);
+    }
 }
 
 .landingButton:hover {

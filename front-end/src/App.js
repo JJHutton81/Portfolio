@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { withRouter, Switch, Route } from 'react-router-dom'
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
@@ -12,12 +12,12 @@ import './App.css';
 
 const App = ({ location }) => {
   const currentKey = location.pathname.split('/')[1] || '/'
-  const timeout = { enter: 1000, exit: 1000 }
+  const timeout = { enter: 500, exit: 500 }
 
   return (
     <TransitionGroup component="main" className="page-main">
     <CSSTransition key={currentKey} timeout={timeout} classNames="fade" appear>
-    
+
             <Switch location={location}>
               <Route exact path='/' component={LandingPage} />
               <Route path='/projects' component={HomeBody} />

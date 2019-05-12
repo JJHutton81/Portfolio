@@ -1,0 +1,97 @@
+.headerBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(161, 181, 202);
+}
+
+.headWrapper{
+    width: 40%;
+    position: absolute;
+    z-index: 2;
+    border-radius: 120px;
+    background-color:  rgb(161, 181, 202);
+    margin: 1%;
+
+}
+
+.title {
+    color: #001F3F;
+    font-size: 2em;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.borderDiv {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(161, 181, 202);
+    z-index: 0;
+    position: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.redPulse {
+    width: 120%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    background-color: #FF4136;
+    animation: pulse4 20s ease-in-out infinite;
+    border-radius: 120px;
+}
+
+.cardWrapper {
+    width: 80%;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(161, 181, 202);
+    border-radius: 120px;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 35%;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 2000ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+}
+
+@keyframes pulse4 {
+    0% {
+      transform: scale( .1);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: scale( 1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale( .1);
+      }
+  }
+

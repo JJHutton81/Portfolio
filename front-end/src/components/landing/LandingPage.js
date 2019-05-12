@@ -7,21 +7,19 @@ import './landing.css';
 
 
 export default class LandingPange extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
-      isActive: true
+      isActive: true,
     };
   }
 
   ToggleClass = (e) => {
-    this.setState({ isActive: !this.state.isActive})
+    this.setState({ isActive: !this.state.isActive })
   }
 
   render() {
-
-    let btn_class = this.state.notFall ? "landingButton" : "fall";
 
       return (
           <div class='LPBody'>
@@ -37,7 +35,7 @@ export default class LandingPange extends Component {
                     <Link to='/projects'> 
                       <button
                         className={(this.state.isActive) ? 'landingButton' : 'fall'}
-                        onClick={this.ToggleClass}> 
+                        onClick={this.ToggleClass}>
                         <p class='pButt'>See my work</p>  
                       </button>
                     </Link>

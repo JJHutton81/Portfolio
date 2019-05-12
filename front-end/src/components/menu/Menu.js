@@ -14,8 +14,6 @@ export default class Menu extends Component {
     return (
       <div class='MBodyWrap'>
         <div class='SubWrap'>
-        <div class='RedInvertUpper'></div>
-          <div class='RedInvertLower'></div>
           <ul class='LinkWrap'>
             <div>  
               <li>

@@ -1,0 +1,127 @@
+.decWrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+}
+
+.skewedTealBorder {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    transform: rotate(0.5turn);
+    border: 17px double rgb(161, 181, 202);
+    border-radius: 25px;
+    animation: rotating 3s ease-in-out infinite;
+}
+
+.skewedTealBorder2 {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    transform: rotate(0.10turn);
+    border: 17px double rgb(161, 181, 202);
+    border-radius: 25px;
+    animation: rotating2 3s ease-in-out infinite;
+}
+
+.skewedTealBorder3 {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    transform: rotate(0.15turn);
+    border: 17px double rgb(161, 181, 202);
+    border-radius: 25px;
+    animation: rotating 5s ease-in-out infinite;
+}
+
+.skewedTealBorder4 {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    transform: rotate(0.20turn);
+    border: 17px double rgb(161, 181, 202);
+    border-radius: 25px;
+    animation: rotating2 5s ease-in-out infinite;
+}
+
+.skewedTealBorder5 {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    transform: rotate(0.25turn);
+    border: 17px double rgb(161, 181, 202);
+    border-radius: 25px;
+    animation: rotating 10s ease-in-out infinite;
+}
+
+.skewedTealBorder6 {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    transform: rotate(0.30turn);
+    border: 17px double rgb(161, 181, 202);
+    border-radius: 25px;
+    animation: rotating2 10s ease-in-out infinite;
+}
+
+.skewedTealBorder7 {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    transform: rotate(0.35turn);
+    border: 17px double rgb(161, 181, 202);
+    border-radius: 25px;
+    animation: rotating 15s ease-in-out infinite;
+}
+
+.skewedTealBorder8 {
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    margin: 0 auto;
+    transform: rotate(0.40turn);
+    border: 17px double rgb(161, 181, 202);
+    border-radius: 25px;
+    animation: rotating2 15s ease-in-out infinite;
+}
+
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotating2 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+ 
