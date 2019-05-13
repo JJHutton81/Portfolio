@@ -4,7 +4,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import HomeBody from './components/homeBody/HomeBody';
 import AboutMe from './components/aboutPages/AboutMe';
-import Skills from './components/menu/Menu';
+import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import LandingPage from './components/landing/LandingPage';
 
