@@ -4,6 +4,8 @@ import PieChart from 'react-minimal-pie-chart';
 
 import STMenu from '../menu/starTrek/STMenu';
 
+import './skills.css';
+
 export default class Skills extends Component {
     render() {
       return (
@@ -12,7 +14,7 @@ export default class Skills extends Component {
             <STMenu />
           </div>
           <div class='SkillWrapper'>
-          <div>
+          <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -36,9 +38,9 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>HTML</h2>
+            <h2 class='SkillTag'>HTML</h2>
             </div>
-            <div>
+            <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -62,9 +64,9 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>CSS</h2>
+            <h2 class='SkillTag'>CSS</h2>
             </div>
-            <div>
+            <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -88,9 +90,9 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>React</h2>
+            <h2 class='SkillTag'>React</h2>
             </div>
-            <div>
+            <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -114,9 +116,9 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>JavaScript</h2>
+            <h2 class='SkillTag'>JavaScript</h2>
             </div>
-            <div>
+            <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -140,9 +142,9 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>Node.js</h2>
+            <h2 class='SkillTag'>Node.js</h2>
             </div>
-            <div>
+            <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -166,9 +168,9 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>SQL</h2>
+            <h2 class='SkillTag'>SQL</h2>
             </div>
-            <div>
+            <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -192,9 +194,9 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>UI Design</h2>
+            <h2 class='SkillTag'>UI Design</h2>
             </div>
-            <div>
+            <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -218,9 +220,9 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>Photoshop</h2>
+            <h2 class='SkillTag'>Photoshop</h2>
             </div>
-            <div>
+            <div class='SkillCard'>
           <PieChart data={[
             {
               title: 'One',
@@ -244,7 +246,7 @@ export default class Skills extends Component {
             animationEasing={"ease-in-out"}
             rounded={'true'}
           />
-            <h2>Illustrator</h2>
+            <h2 class='SkillTag'>Illustrator</h2>
             </div>
           </div>
           </div>

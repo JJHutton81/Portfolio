@@ -8,7 +8,6 @@ const LinkStyle = css({
   fontFamily: "Stylish, sans-serif",
   textDecoration: 'none',
   fontSize: '1.5rem',
-  textDecoration: 'none',
   color: 'wheat',
 })
 
