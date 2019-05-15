@@ -121,19 +121,19 @@
 
   .fall{
     background-color: wheat;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-	border: 5px solid wheat;
-	display: inline-block;
-	cursor: pointer;
-	color: #001F3F;
-	font-family: 'Stylish', sans-serif;
-	font-size: 1.5rem;
-	font-weight: bold;
-	padding: 3%;
+	  -moz-border-radius: 8px;
+	  -webkit-border-radius: 8px;
+	  border-radius: 8px;
+	  border: 5px solid wheat;
+	  display: inline-block;
+	  cursor: pointer;
+	  color: #001F3F;
+	  font-family: 'Stylish', sans-serif;
+	  font-size: 1.5rem;
+	  font-weight: bold;
+	  padding: 3%;
     text-decoration: none;  
-    animation: drop 1.2s forwards;
+    animation: drop 1s forwards;
   }
   @keyframes drop {
     0% {

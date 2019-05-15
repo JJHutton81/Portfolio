@@ -11,6 +11,7 @@ export default class Skills extends Component {
           <div>
             <STMenu />
           </div>
+          <div class='SkillWrapper'>
           <div>
           <PieChart data={[
             {
@@ -245,6 +246,7 @@ export default class Skills extends Component {
           />
             <h2>Illustrator</h2>
             </div>
+          </div>
           </div>
         )    
     }

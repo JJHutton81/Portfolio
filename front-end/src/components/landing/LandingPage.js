@@ -32,7 +32,7 @@ export default class LandingPange extends Component {
                   <h1 class='landingTitle'>Coding is my Life.</h1>
                   <h1 class='landingTitle'>UI/UX is my Love.</h1>
                   <div class='buttonWrap'>
-                    <Link to='/projects'> 
+                    <Link to='/about'> 
                       <button
                         className={(this.state.isActive) ? 'landingButton' : 'fall'}
                         onClick={this.ToggleClass}>

@@ -1,24 +1,16 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { css } from 'glamor';
 
 import './stMenu.css';
 
-const LinkStyle = {
-  backgroundColor: 'transparent',
-	borderRadius: '8px',
-	border: '5px solid wheat',
-	display: 'inline-block',
-	cursor: 'pointer',
-	color: 'wheat',
-	fontFamily: "Stylish, sans-serif",
-	fontSize: '1.5rem',
-	fontWeight: 'bold',
-	padding: '1%',
+const LinkStyle = css({
+  fontFamily: "Stylish, sans-serif",
   textDecoration: 'none',
-  textAlign: 'center',
-  margin: '2%',
-  width: '80%'
-}
+  fontSize: '1.5rem',
+  textDecoration: 'none',
+  color: 'wheat',
+})
 
 export default class STMenu extends Component {
     constructor(props) {
@@ -35,19 +27,22 @@ export default class STMenu extends Component {
     render() {
       return (
         <div class="wrapper">
+        <div class="SiteTitleWrap">
+          <h1 class="SiteTitle">James Hutton's Portfoilo</h1>
+          </div>
           {this.state.isOpen && <div class="sidebar">
           <div class='stLinkWrap'>
             <div class='stButtWrap'>  
-              <NavLink style={LinkStyle} activeStyle={{backgroundColor: 'wheat', color: "#FF4136"}} exact path to='/'><p>Home</p></NavLink> 
-              <NavLink style={LinkStyle} activeStyle={{backgroundColor: 'wheat', color: "#FF4136"}} to='/projects'><p>Projects</p></NavLink>     
-              <NavLink style={LinkStyle} activeStyle={{backgroundColor: 'wheat', color: "#FF4136"}} to='/aboutme'><p>About Me</p></NavLink>    
-              <NavLink style={LinkStyle} activeStyle={{backgroundColor: 'wheat', color: "#FF4136"}} to='/skills'><p>Skills</p></NavLink>     
-              <NavLink style={LinkStyle} activeStyle={{backgroundColor: 'wheat', color: "#FF4136"}} to='/contact'><p>Contact</p></NavLink>     
+              <button class='STMButton'><NavLink {...LinkStyle} exact path to='/'><span>Home</span></NavLink></button> 
+              <button class='STMButton'><NavLink {...LinkStyle} to='/projects'><span>Projects</span></NavLink></button>     
+              <button class='STMButton'><NavLink {...LinkStyle} to='/about'><span>About</span></NavLink></button>    
+              <button class='STMButton'><NavLink {...LinkStyle} to='/skills'><span>Skills</span></NavLink></button>     
+              <button class='STMButton'><NavLink {...LinkStyle} to='/contact'><span>Contact</span></NavLink></button>     
             </div>    
           </div>
         </div>  
         }
-        <button class='STMButton' onClick={() => this.toggleMenu()}>Toggle Menu</button>
+        <button class='STMButton' onClick={() => this.toggleMenu()}>Menu</button>
       </div>
     );
   }
