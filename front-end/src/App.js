@@ -12,7 +12,7 @@ import './App.css';
 
 const App = ({ location }) => {
   const currentKey = location.pathname.split('/')[1] || '/'
-  const timeout = { enter: 500, exit: 500 }
+  const timeout = { enter: 3000, exit: 3000 }
 
   return (
     <TransitionGroup component="main" className="page-main">

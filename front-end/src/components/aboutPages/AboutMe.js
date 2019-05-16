@@ -7,7 +7,7 @@ import './aboutMe.css';
 export default class AboutMe extends Component {
     render() {
         return(
-            <div>
+            <div className='AMWrap'>
                 <div>
                     <STMenu />
                 </div>
