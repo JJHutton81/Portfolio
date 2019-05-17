@@ -4,7 +4,6 @@ import { useSpring, animated } from 'react-spring';
 function HookedComponent() {
     const [props] = useSpring({
         opacity: 1,
-        color: 'white',
         from: { opacity: 0 },
         delay: '2000'
     })

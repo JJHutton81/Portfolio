@@ -1,10 +1,18 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Trail } from "react-spring/renderprops";
 
 import Heart from '../../media/heart.png';
+import HookedComponent from './hooks/Hook1';
 
 import './landing.css';
 
+const posts = [
+  { title: "Hello, I'm James Hutton.", id: 1 },
+  { title: "I'm a full stack Web Developer", id: 2 },
+  { title: "Coding is my Life.", id: 3 },
+  { title: "UI/UX is my Love.", id: 4 }
+];
 
 export default class LandingPange extends Component {
   constructor(props) {
@@ -27,10 +35,19 @@ export default class LandingPange extends Component {
             <div class='element2'>
               <div class='heartWraper'>
                 <div class='landingCard'>
-                  <h1 class='landingTitle'>Hello, I'm James Hutton.</h1>
-                  <h1 class='landingTitle'>I'm a full stack Web Developer</h1>
-                  <h1 class='landingTitle'>Coding is my Life.</h1>
-                  <h1 class='landingTitle'>UI/UX is my Love.</h1>
+                  <Trail
+                    items={posts}
+                    keys={post => post.id}
+                    from={{ opacity: 0 }}
+                    to={{ opacity: 1 }}
+                    delay={3000}
+                  >
+                  {post => props => (
+                  <h1 className='landingTitle' style={props} className="post">
+                  {post.title}
+                  </h1>
+                  )}
+                  </Trail>
                   <div class='buttonWrap'>
                     <Link to='/about'> 
                       <button

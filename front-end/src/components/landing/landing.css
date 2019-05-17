@@ -79,13 +79,6 @@
     animation-delay: 1s;
 }
 
-.landingTitle {
-    font-size: 3rem;
-    color: wheat;
-    font-family: 'Stylish', sans-serif;
-    text-align: center;
-}
-
 .buttonWrap {
     width: 40%;
     margin: 0 auto;
@@ -101,6 +94,13 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.landingCard > h1 {
+  font-size: 3rem;
+  color: wheat;
+  font-family: 'Stylish', sans-serif;
+  text-align: center;
 }
 
   .landingButton {
