@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Trail } from "react-spring/renderprops";
+import { NavLink } from 'react-router-dom';
 
 import PieChart from 'react-minimal-pie-chart';
 
@@ -253,20 +254,32 @@ export default class Skills extends Component {
           </div>
           <div class='SkillWrapper'>
           <Trail
-                    items={posts}
-                    keys={post => post.id}
-                    from={{ opacity: '0', transform: 'translate3d(100%,0,0)' }}
-                    to={{ opacity: '1', transform: 'translate3d(0,0,0)' }}
-                    delay={1000}
-                  >
-                  {post => props => (
-                  <h1 className='landingTitle' style={props} className="post">
-                  {post.title}
-                  </h1>
-                  )}
-                  </Trail>
-            </div> 
-          </div>
-        )    
+            items={posts}
+            keys={post => post.id}
+            from={{ opacity: '0', transform: 'translate3d(100%,0,0)' }}
+            to={{ opacity: '1', transform: 'translate3d(0,0,0)' }}
+            delay={2000}
+          >
+          {post => props => (
+            <h1 className='landingTitle' style={props} className="post">
+            {post.title}
+            </h1>
+          )}
+          </Trail>
+          <NavLink to='/contact'
+            style={{ 
+              display: 'flex',
+              textDecoration: 'none',
+              alignSelf: 'flex-end',
+              marginRight: '2%',
+            }}
+          > 
+          <button className='ProjectButton'>
+            <p class='pButt'>Next</p>  
+          </button>
+          </NavLink>
+          </div> 
+        </div>
+      )    
     }
 }
