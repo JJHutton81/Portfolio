@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './homeBody.css';
 
@@ -28,7 +29,19 @@ export default class HomeBody extends Component {
             </div>
             
             </div>
-          </div> 
+          </div>
+          <NavLink to='/skills'
+            style={{ 
+              display: 'flex',
+              textDecoration: 'none',
+              alignSelf: 'flex-end',
+              marginRight: '2%',
+            }}
+          > 
+          <button className='ProjectButton'>
+            <p class='pButt'>Next</p>  
+          </button>
+          </NavLink> 
         </div>    
       </div>   
     )

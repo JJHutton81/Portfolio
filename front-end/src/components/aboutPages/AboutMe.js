@@ -71,10 +71,10 @@ export default class AboutMe extends Component {
                             marginRight: '2%',
                         }}
                     > 
-                        <button className='AboutButton'>
-                          <p class='pButt'>Next</p>  
-                        </button>
-                      </NavLink>  
+                    <button className='AboutButton'>
+                        <p class='pButt'>Next</p>  
+                    </button>
+                    </NavLink>  
                 </div>
                 </div>
             </div>
