@@ -1,3 +1,168 @@
 .AMWrap {
     width: 100%;
 }
+
+.AMBodyWrapper {
+    width: 100%;
+    background-color: rgb(161, 181, 202);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.AMCardWrapper {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    margin: 3%;
+    border-radius: 8px;
+    background-color: wheat;
+    border-top: 7px double #001F3F;
+    border-bottom: 7px double #001F3F;
+}
+
+.AMCTitle {
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+    color: #001f3f;
+    margin: 1%;
+}
+
+.AMCText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: #001f3f;
+    margin: 1%;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.AMCText2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    color: #001f3f;
+    margin: 1%;
+    line-height: 1.1;
+}
+
+.hexagon {
+    position: relative;
+    width: 120px;
+    height: 69.28px;
+    background-color: #001f3f;
+    margin: 34.64px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+}
+  
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 34.64px solid #001f3f;
+}
+
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 34.64px solid #001f3f;
+}
+
+.AMCard2Boday {
+    padding: 3%;
+    background-color: rgb(161, 181, 202);
+}
+
+.AMCardWrapper2 {
+    display: flex;
+    padding: 3%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: wheat;
+    border-radius: 8px;
+    border-top: 7px double #001F3F;
+    border-bottom: 7px double #001F3F;
+}
+
+.AMCSubWrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+
+.Head {
+    width: 13%;
+    border-radius: 50%;
+}
+
+.AboutButton {
+    background-color: transparent;
+    border-radius: 8px;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #001F3F;
+    font-family: 'Stylish', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1%;
+    text-decoration: none;
+    margin: 2%;
+    animation: buttonPulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes buttonPulse {
+    from { transform: scale(1); }
+    50% { transform: scale(0.50); }
+    to { transform: scale(1); }
+}
+
+.AboutButton:hover,
+.AboutButton:focus {
+    animation-name: unset;
+}
+
+/* 
+.hexagon2 {
+    position: relative;
+    width: 237px; 
+    height: 115.47px;
+    background-color: #001f3f;
+    margin: 57.74px 0;
+}
+  
+.hexagon2:before,
+.hexagon2:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+}
+  
+.hexagon2:before {
+    bottom: 100%;
+    border-bottom: 57.74px solid #001f3f;
+}
+  
+.hexagon2:after {
+    top: 100%;
+    width: 0;
+    border-top: 57.74px solid #001f3f;
+}
+
+.Head {
+    width:10%;
+} */

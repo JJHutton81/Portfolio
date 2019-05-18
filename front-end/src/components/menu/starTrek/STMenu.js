@@ -32,9 +32,9 @@ export default class STMenu extends Component {
           {this.state.isOpen && <div class="sidebar">
           <div class='stLinkWrap'>
             <div class='stButtWrap'>  
-              <button class='STMButton'><NavLink {...LinkStyle} exact path to='/'><span>Home</span></NavLink></button> 
-              <button class='STMButton'><NavLink {...LinkStyle} to='/projects'><span>Projects</span></NavLink></button>     
+              <button class='STMButton'><NavLink {...LinkStyle} exact path to='/'><span>Home</span></NavLink></button>     
               <button class='STMButton'><NavLink {...LinkStyle} to='/about'><span>About</span></NavLink></button>    
+              <button class='STMButton'><NavLink {...LinkStyle} to='/projects'><span>Projects</span></NavLink></button> 
               <button class='STMButton'><NavLink {...LinkStyle} to='/skills'><span>Skills</span></NavLink></button>     
               <button class='STMButton'><NavLink {...LinkStyle} to='/contact'><span>Contact</span></NavLink></button>     
             </div>    

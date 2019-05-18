@@ -1,77 +1,64 @@
 import React, { Component } from 'react';
-import Modal from 'react-modal';
+// import Modal from 'react-modal';
 
 import './homeBody.css';
-import './decorativeDiv.css';
 
 import STMenu from '../menu/starTrek/STMenu';
 
-import JOBDThumb from './homeTumbs/jobdthumb.png';
-import Note from './homeTumbs/note.png';
+// import JOBDThumb from './homeTumbs/jobdthumb.png';
+// import Note from './homeTumbs/note.png';
 
-Modal.setAppElement('body');
+// Modal.setAppElement('body');
 
-const customStyles = {
-  content : {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)'
-  }
-};
+// const customStyles = {
+//   content : {
+//     top: '50%',
+//     left: '50%',
+//     right: 'auto',
+//     bottom: 'auto',
+//     marginRight: '-50%',
+//     transform: 'translate(-50%, -50%)'
+//   }
+// };
 
 export default class HomeBody extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.state = {
-      isOpen: false,
-      modalIsOpen: false
-    }
-    this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
+  //   this.state = {
+  //     isOpen: false,
+  //     modalIsOpen: false
+  //   }
+  //   this.openModal = this.openModal.bind(this);
+  //   this.afterOpenModal = this.afterOpenModal.bind(this);
+  //   this.closeModal = this.closeModal.bind(this);
+  // }
 
-  openModal() {
-    this.setState({modalIsOpen: true});
-  }
+  // openModal() {
+  //   this.setState({modalIsOpen: true});
+  // }
 
-  afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    this.subtitle.style.color = '#f00';
-  }
+  // afterOpenModal() {
+  //   // references are now sync'd and can be accessed.
+  //   this.subtitle.style.color = '#f00';
+  // }
 
-  closeModal() {
-    this.setState({modalIsOpen: false});
-  }
+  // closeModal() {
+  //   this.setState({modalIsOpen: false});
+  // }
 
-  toggleMenu = (e) => {
-    this.setState({ isOpen: !this.state.isOpen });
-  }
+  // toggleMenu = (e) => {
+  //   this.setState({ isOpen: !this.state.isOpen });
+  // }
   
 
   render() {
     return (
       <div class='HBWrapper'>
-        <div class='navWrapper'>
+        <div>
           <STMenu />
         </div>
         <div class="headerBody">  
-          <div className='borderDiv'>
-          <div className ='redPulse'></div>
-          <div className ='decWrap'>
-          <div className ='skewedTealBorder'></div>
-          <div className ='skewedTealBorder2'></div>
-          <div className ='skewedTealBorder3'></div>
-          <div className ='skewedTealBorder4'></div>
-          <div className ='skewedTealBorder5'></div>
-          <div className ='skewedTealBorder6'></div>
-          <div className ='skewedTealBorder7'></div>
-          <div className ='skewedTealBorder8'></div>
-          </div>
           <div class='cardWrapper'>
           <h1 class="title">James Hutton's Portfolio</h1>
             <div className='cardContainer'>
@@ -119,8 +106,7 @@ export default class HomeBody extends Component {
             </div>
           </div> 
         </div>    
-      </div>
-    </div>     
+      </div>   
     )
   }
 }

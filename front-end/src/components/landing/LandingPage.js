@@ -6,13 +6,6 @@ import Heart from '../../media/heart.png';
 
 import './landing.css';
 
-const posts = [
-  { title: "Hello, I'm James Hutton.", id: 1 },
-  { title: "I'm a full stack Web Developer", id: 2 },
-  { title: "Coding is my Life.", id: 3 },
-  { title: "UI/UX is my Love.", id: 4 }
-];
-
 export default class LandingPange extends Component {
   constructor(props) {
     super(props);
@@ -73,22 +66,13 @@ export default class LandingPange extends Component {
                         <button
                           className={(this.state.isActive) ? 'landingButton' : 'fall'}
                           onClick={this.ToggleClass}>
-                          <p class='pButt'>See my work</p>  
+                          <p class='pButt'>Get Started</p>  
                         </button>
                       </Link>
                     </div>  
                     ) 
                   } 
                   </Spring>
-                  {/* <div class='buttonWrap'>
-                    <Link to='/about'> 
-                      <button
-                        className={(this.state.isActive) ? 'landingButton' : 'fall'}
-                        onClick={this.ToggleClass}>
-                        <p class='pButt'>See my work</p>  
-                      </button>
-                    </Link>
-                  </div>   */}
                 </div>
                 <img class='heartBeat' src={Heart} alt='A human heart' />
               </div>
