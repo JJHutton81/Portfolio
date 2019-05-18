@@ -4,7 +4,11 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.0",
     "glamor": "^2.20.40",
+    "nodemailer": "^6.1.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-minimal-pie-chart": "^4.0.0",
@@ -15,7 +19,7 @@
     "react-transition-group": "^4.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node .",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
