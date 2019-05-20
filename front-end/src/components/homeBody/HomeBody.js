@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { Spring } from "react-spring/renderprops";
 
 import './homeBody.css';
 
@@ -11,7 +12,9 @@ import Note from './homeTumbs/note.png';
 export default class HomeBody extends Component {
   render() {
     return (
-      <div class='HBWrapper'>
+      <Spring config={{duration: 2000}} from={{ marginTop: 1000, marginLeft: 1000 }} to={{ marginTop: 0, marginLeft: 0 }}>
+                    { props => (
+      <div class='HBWrapper' style={ props }>
         <div>
           <STMenu />
         </div>
@@ -43,7 +46,10 @@ export default class HomeBody extends Component {
           </button>
           </NavLink> 
         </div>    
-      </div>   
+      </div> 
+    )
+          }
+          </Spring>  
     )
   }
 }

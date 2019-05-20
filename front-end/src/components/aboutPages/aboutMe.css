@@ -1,9 +1,21 @@
 .AMWrap {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    position: relative;
+    background-color: rgb(161, 181, 202);
+}
+
+.MenuWrap {
+    width: 100vw;
+    margin-bottom: .5%;
 }
 
 .AMBodyWrapper {
-    width: 100%;
+    width: 100vw;
     background-color: rgb(161, 181, 202);
     display: flex;
     justify-content: space-evenly;
@@ -11,12 +23,13 @@
 }
 
 .AMCardWrapper {
-    width: 33%;
+    width: 30%;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1%;
-    margin: 3%;
+    padding: .5%;
+    margin: 0% .5% .5% .5%;
     border-radius: 8px;
     background-color: wheat;
     border-top: 7px double #001F3F;
@@ -27,14 +40,14 @@
     font-family: 'Righteous', cursive;
     font-size: 1.5rem;
     color: #001f3f;
-    margin: 1%;
+    margin: .5%;
 }
 
 .AMCText {
     font-family: 'Roboto', sans-serif;
     font-size: 1.15rem;
     color: #001f3f;
-    margin: 1%;
+    margin: .5%;
     text-align: center;
     line-height: 1.1;
 }
@@ -43,7 +56,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.15rem;
     color: #001f3f;
-    margin: 1%;
+    margin: .5%;
     line-height: 1.1;
 }
 
@@ -79,13 +92,15 @@
 }
 
 .AMCard2Boday {
-    padding: 3%;
+    padding: .5%;
     background-color: rgb(161, 181, 202);
+    height: 100vh;
+    display: flex;
 }
 
 .AMCardWrapper2 {
     display: flex;
-    padding: 3%;
+    padding: .5%;
     justify-content: space-evenly;
     align-items: center;
     background-color: wheat;
@@ -97,12 +112,13 @@
 .AMCSubWrapper {
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: .5%;
 }
 
 .Head {
     width: 13%;
     border-radius: 50%;
+    height: 275px;
 }
 
 .AboutButton {
@@ -115,7 +131,7 @@
     font-family: 'Stylish', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 1%;
+    padding: .5%;
     text-decoration: none;
     margin: 2%;
     animation: buttonPulse;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Trail } from "react-spring/renderprops";
+import { Spring, Trail } from "react-spring/renderprops";
 import { NavLink } from 'react-router-dom';
 
 import PieChart from 'react-minimal-pie-chart';
@@ -248,7 +248,9 @@ const posts = [
 export default class Skills extends Component {
     render() {
       return (
-        <div>
+        <Spring config={{duration: 2000}} from={{ marginTop: 1000, marginLeft: 1000 }} to={{ marginTop: 0, marginLeft: 0 }}>
+                    { props => (
+        <div style={ props }>
           <div>
             <STMenu />
           </div>
@@ -261,7 +263,7 @@ export default class Skills extends Component {
             delay={2000}
           >
           {post => props => (
-            <h1 className='landingTitle' style={props} className="post">
+            <h1 className='landingTitle' style={props}>
             {post.title}
             </h1>
           )}
@@ -280,6 +282,9 @@ export default class Skills extends Component {
           </NavLink>
           </div> 
         </div>
+                    )
+          }
+          </Spring>
       )    
     }
 }
