@@ -217,32 +217,32 @@ const posts = [
           />
             <h2 class='SkillTag'>Photoshop</h2>
             </div>, id: 8 },
-     {title: <div class='SkillCard'>
-     <PieChart data={[
-       {
-         title: 'One',
-         value: 60,
-         color: '#FF4136'
-       },
-       ]} 
-       totalValue={100}
-       lineWidth={20}
-       label
-       labelStyle={{
-       fontSize: '25px',
-       fontFamily: 'Stylish, sans-serif'
-       }}
-       style={{height: '200px'}}
-       labelPosition={0}
-       startAngle={-25}
-       lengthAngle={-360}
-       animate
-       animationDuration={3000}
-       animationEasing={"ease-in-out"}
-       rounded={'true'}
-     />
-       <h2 class='SkillTag'>Illustrator</h2>
-     </div>, id: 9 }       
+    //  {title: <div class='SkillCard'>
+    //  <PieChart data={[
+    //    {
+    //      title: 'One',
+    //      value: 60,
+    //      color: '#FF4136'
+    //    },
+    //    ]} 
+    //    totalValue={100}
+    //    lineWidth={20}
+    //    label
+    //    labelStyle={{
+    //    fontSize: '25px',
+    //    fontFamily: 'Stylish, sans-serif'
+    //    }}
+    //    style={{height: '200px'}}
+    //    labelPosition={0}
+    //    startAngle={-25}
+    //    lengthAngle={-360}
+    //    animate
+    //    animationDuration={3000}
+    //    animationEasing={"ease-in-out"}
+    //    rounded={'true'}
+    //  />
+    //    <h2 class='SkillTag'>Illustrator</h2>
+    //  </div>, id: 9 }       
 ];
 
 export default class Skills extends Component {
@@ -250,7 +250,7 @@ export default class Skills extends Component {
       return (
         <Spring config={{duration: 2000}} from={{ marginTop: 1000, marginLeft: 1000 }} to={{ marginTop: 0, marginLeft: 0 }}>
                     { props => (
-        <div style={ props }>
+        <div className='SkillBody' style={ props }>
           <div>
             <STMenu />
           </div>
@@ -263,7 +263,7 @@ export default class Skills extends Component {
             delay={2000}
           >
           {post => props => (
-            <h1 className='landingTitle' style={props}>
+            <h1 className='SkillTitle' style={props}>
             {post.title}
             </h1>
           )}
