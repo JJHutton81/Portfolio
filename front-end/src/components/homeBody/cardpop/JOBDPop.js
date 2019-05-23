@@ -10,15 +10,16 @@ const pages = [
     <animated.div style={{ ...style }} className='JOBDcard'>
       <h2 className='CTitle'>Capstone Project</h2>
       <img className='JOBD' src={JOBDThumb} alt="Thumbnail of Lab Project" />
+      <span className='PsudoButt'>Learn More</span>
     </animated.div>
   ),
   style => (
     <animated.div style={{ ...style }} className='JOBDcard'>
-      <h1>We take the hitch out of getting hitched.</h1>
-      <h2>This is my Capstone prject while attending Lambda School.</h2>
-      <h2>This app helps consumers handle thier wedding guest list digitally, simplifying the RSVP process, by allowing people to handle it digitally.</h2>
-      <h2>There are several other features that incentivize the consumer to use the app over traditional wedding invitations, or in conjuction with them.</h2>
-      <button>Learn More</button>
+      <h1 className='CTitle'>We take the hitch out of getting hitched.</h1>
+      <h2 className='CText'>This is my Capstone prject while attending Lambda School.
+        This app helps consumers handle thier wedding guest list digitally, simplifying the RSVP process, by allowing people to handle it digitally.
+        There are several other features that incentivize the consumer to use the app over traditional wedding invitations, or in conjuction with them.</h2>
+      <span className='PsudoButt'>Learn Even More</span>
     </animated.div>
   ),
   style => (
