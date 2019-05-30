@@ -163,7 +163,49 @@
     border-right: 2px solid black;
     margin-right: 1.5px;
     padding-right: 1%;
-    
+}
+
+.DepCardNTA {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 7px double black;
+    border-bottom: 7px double black;
+    margin-right: 1.5px;
+    padding-right: 1%;
+}
+
+.DepNTATitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.DepNTABodyLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 2px solid black;
+    margin-right: 1.5px;
+    padding-right: 1%;
+}
+
+.DepNTABodyRight{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 2px solid black;
+    margin-left: 1.5px;
+    padding-left: 1%;
+}
+
+.DepNTABody{
+    width: 100%;
+    display: flex;
+    margin-bottom: 3%;
 }
 
 .DevCard {
@@ -227,3 +269,4 @@
     color: black;
     padding: 1%;
 }
+
