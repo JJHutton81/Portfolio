@@ -2,26 +2,20 @@ import React, {Component} from 'react';
 
 import STMenu from '../menu/starTrek/STMenu';
 
+import './contact.css';
+
 export default class Contact extends Component{
-    render(){
-        return(
-          <div>
-            <div><STMenu /></div>
-            <form className="contact-form" onSubmit={ (e) => this.formSubmit(e)}>
-  <label class="message" htmlFor="message-input">Your Message</label>
-  <textarea onChange={e => this.setState({ message: e.target.value})} name="message" class="message-input" type="text" placeholder="Please write your message here" value={this.state.message} required/>
-
-  <label class="message-name" htmlFor="message-name">Your Name</label>
-  <input onChange={e => this.setState({ name: e.target.value})} name="name" class="message-name" type="text" placeholder="Your Name" value={this.state.name}/>
-
-  <label class="message-email" htmlFor="message-email">Your Email</label>
-  <input onChange={(e) => this.setState({ email: e.target.value})} name="email" class="message-email" type="email" placeholder="your@email.com" required value={this.state.email} />
-
-  <div className="button--container">
-      <button type="submit" className="button button-primary">{ this.state.buttonText }</button>
-  </div>
-</form>
-            </div>
+  render(){
+    return(
+      <div className='ContactBody'>
+        <div><STMenu /></div>
+        <div className='ContactWrap'>
+          <h1 className='ContactTitle'>This site is still under construction. Thank you for your patience.</h1>
+          <h1 className='ContactTitle'>Do you have any questions, comments, or want to work with me?</h1>
+          <h2 className='ContactTitle'>Contact me at: jjhutton81@gmail.com</h2>
+          <h1 className='ContactTitle'>Let's make something special.</h1>    
+        </div>
+      </div>
         )
     }
 }
