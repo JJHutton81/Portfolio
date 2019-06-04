@@ -83,7 +83,7 @@ export default class AboutMe extends Component {
                     <h3 className='AMCText2'>I have a background in the arts, and Graphic Design. I transitioned my skills to Web Development.</h3>
                     <h3 className='AMCText2'>I love UI effects, animations, and creating intuitive, dynamic, and memorable user experiences.</h3>
                     <h3 className='AMCText2'>My passion is to make the internet come alive, and show people that the internet can be a creative and artistic place, 
-                        without sacraficing performance, and ease of use.</h3>
+                        without sacrificing performance, and ease of use.</h3>
                     <h3 className='AMCText2'>Let's make something special, together.</h3> 
                     </div> 
                     <NavLink to='/projects'
