@@ -15,7 +15,7 @@
 }
 
 .SkillCard {
-    width: 50%;
+    position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -25,10 +25,13 @@
     border-radius: 8px;
     border-top: 7px double #001F3F;
     border-bottom: 7px double #001F3F;
-    z-index: 1;
-    position: relative;  
+    z-index: 1; 
     background-color: wheat;
     overflow: hidden;
+    width: 20ch;
+    height: 35ch;
+    cursor: pointer;
+    will-change: transform, opacity;
 }
 
 .SkillCard::after {
