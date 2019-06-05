@@ -67,6 +67,12 @@
     overflow: auto;
 }
 
+.form-control{
+    width: 100%;
+    padding: .5%;
+    margin: 1%;
+}
+
 .PsudoButt {
     position: relative;
     font-size: 1.5rem;
