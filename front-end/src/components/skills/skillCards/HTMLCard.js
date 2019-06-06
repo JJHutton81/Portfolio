@@ -29,7 +29,7 @@ export default function HTMLCard() {
             fontSize: '25px',
             fontFamily: 'Stylish, sans-serif'
           }}
-          style={{ height: '200px' }}
+          style={{ height: '100px' }}
           labelPosition={0}
           startAngle={-25}
           lengthAngle={-360}
