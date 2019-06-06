@@ -26,8 +26,37 @@ export default class Skills extends Component {
       >
         {props => (
           <div className="SkillBody" style={props}>
-            <div>
+            <div className="MenuWrap">
               <STMenu />
+              <div className="SubNav">
+                <NavLink
+                  to="/projects"
+                  style={{
+                    display: "flex",
+                    textDecoration: "none",
+                    alignSelf: "flex-end",
+                    marginRight: "2%"
+                  }}
+                >
+                  <button className="SubNavBtn">
+                    <p class="pButt">Projects</p>
+                  </button>
+                </NavLink>
+                <h1 class="SiteTitle">Skill Set</h1>
+                <NavLink
+                  to="/contact"
+                  style={{
+                    display: "flex",
+                    textDecoration: "none",
+                    alignSelf: "flex-end",
+                    marginRight: "2%"
+                  }}
+                >
+                  <button className="SubNavBtn">
+                    <p class="pButt">Contact</p>
+                  </button>
+                </NavLink>
+              </div>
             </div>
             <div className="CardBody">
               <div class="CardWrapper1-5">
@@ -216,21 +245,6 @@ export default class Skills extends Component {
                   )}
                 </Spring>
               </div>
-              <NavLink
-                to="/contact"
-                style={{
-                  display: 'flex',
-                  textDecoration: 'none',
-                  alignSelf: 'flex-end',
-                  right: "4%",
-                  position: 'absolute',
-                  marginTop: "33%"
-                }}
-              >
-                <button className="ProjectButton">
-                  <p class="pButt">Next</p>
-                </button>
-              </NavLink>
             </div>
           </div>
         )}
