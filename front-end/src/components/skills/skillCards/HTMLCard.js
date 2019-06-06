@@ -1,4 +1,3 @@
-import '../skills.css';
 import { render } from 'react-dom'
 import React, { useState } from 'react'
 import { useSpring, animated as a } from 'react-spring'
@@ -42,7 +41,7 @@ export default function HTMLCard() {
         <h2 class='SkillTag'>HTML</h2>
       </a.div>
       <a.div className="SkillCard" style={{ opacity, transform: transform.interpolate(t => `${t} rotateY(180deg)`) }}>
-        <h3>Eearch Engine Optimization</h3>
+        <h3>Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</h3>
       </a.div>
     </div>
   )
