@@ -40,7 +40,6 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* margin: 3%; */
   padding: 0% 3%;
   border-radius: 8px;
   border-top: 7px double #001f3f;
@@ -48,7 +47,7 @@
   z-index: 1;
   background-color: wheat;
   overflow: hidden;
-  width: 20ch;
+  width: 25ch;
   height: 30ch;
   cursor: pointer;
   will-change: transform, opacity;
@@ -81,4 +80,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.SkillCardBack {
+  margin: 0 10px;
+  color: #001f3f;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
 }

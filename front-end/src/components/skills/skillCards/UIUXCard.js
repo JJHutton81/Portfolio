@@ -51,7 +51,7 @@ export default function UIUXCard() {
           transform: transform.interpolate(t => `${t} rotateY(180deg)`)
         }}
       >
-        <h3>
+        <h3 className="SkillCardBack">
           UX design refers to user experience design, while UI design stands for
           user interface design. Both of these are crucial to an IT product and
           need to work closely together.

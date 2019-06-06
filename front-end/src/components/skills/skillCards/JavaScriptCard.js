@@ -51,7 +51,7 @@ export default function JavaScriptCard() {
           transform: transform.interpolate(t => `${t} rotateY(180deg)`)
         }}
       >
-        <h3>
+        <h3 className="SkillCardBack">
           JavaScript often abbreviated as JS, is a high-level, interpreted
           programming language that conforms to the ECMAScript specification.
           JavaScript has curly-bracket syntax, dynamic typing, prototype-based

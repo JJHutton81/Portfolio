@@ -51,7 +51,7 @@ export default function Illustrator() {
           transform: transform.interpolate(t => `${t} rotateY(180deg)`)
         }}
       >
-        <h3>
+        <h3 className="SkillCardBack">
           Adobe Illustrator is a vector graphics editor developed and marketed
           by Adobe Inc. Originally designed for the Apple Macintosh, development
           of Adobe Illustrator began in 1985.

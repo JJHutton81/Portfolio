@@ -51,7 +51,7 @@ export default function CSSCard() {
           transform: transform.interpolate(t => `${t} rotateY(180deg)`)
         }}
       >
-        <h3>
+        <h3 className='SkillCardBack'>
           Cascading Style Sheets (CSS) is a style sheet language used for
           describing the presentation of a document written in a markup language
           like HTML. CSS is a cornerstone technology of the World Wide Web,

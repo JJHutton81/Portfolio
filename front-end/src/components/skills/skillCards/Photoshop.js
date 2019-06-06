@@ -51,7 +51,7 @@ export default function Photoshop() {
           transform: transform.interpolate(t => `${t} rotateY(180deg)`)
         }}
       >
-        <h3>
+        <h3 className="SkillCardBack">
           Adobe Photoshop is a raster graphics editor developed and published by
           Adobe Inc. for Windows and macOS. This software has become the
           industry standard not only in raster graphics editing, but in digital

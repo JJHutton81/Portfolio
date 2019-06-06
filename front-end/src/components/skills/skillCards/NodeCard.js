@@ -51,9 +51,7 @@ export default function NodeCard() {
           transform: transform.interpolate(t => `${t} rotateY(180deg)`)
         }}
       >
-        <h3>
-          Node.js is an open-source, cross-platform JavaScript run-time
-          environment that executes JavaScript code outside of a browser.
+        <h3 className="SkillCardBack">
           Node.js lets developers use JavaScript to write command line tools and
           for server-side scripting—running scripts server-side to produce
           dynamic web page content before the page is sent to the user's web

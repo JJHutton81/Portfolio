@@ -52,7 +52,7 @@ export default function ReactCard() {
           transform: transform.interpolate(t => `${t} rotateY(180deg)`)
         }}
       >
-        <h3>
+        <h3 className="SkillCardBack">
           React (also known as React.js or ReactJS) is a JavaScript library for
           building user interfaces. It is maintained by Facebook and a community
           of individual developers and companies.
