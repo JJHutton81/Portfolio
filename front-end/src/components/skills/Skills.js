@@ -19,13 +19,14 @@ import "./skills.css";
 export default class Skills extends Component {
   render() {
     return (
-      <Spring
-        config={{ duration: 2000 }}
-        from={{ marginTop: 1000, marginLeft: 1000 }}
-        to={{ marginTop: 0, marginLeft: 0 }}
-      >
-        {props => (
-          <div className="SkillBody" style={props}>
+      // <Spring
+      //   config={{ duration: 2000 }}
+      //   from={{ marginTop: 1000, marginLeft: 1000 }}
+      //   to={{ marginTop: 0, marginLeft: 0 }}
+      // >
+      //   {props => (
+          // <div className="SkillBody" style={props}>
+            <div className='SkillBody'>
             <div className="MenuWrap">
               <STMenu />
               <div className="SubNav">
@@ -247,8 +248,8 @@ export default class Skills extends Component {
               </div>
             </div>
           </div>
-        )}
-      </Spring>
+      //   )}
+      // </Spring>
     );
   }
 }

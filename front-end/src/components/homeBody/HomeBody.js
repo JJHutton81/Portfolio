@@ -11,13 +11,14 @@ import NTAPop from "./cardpop/NTAPop";
 export default class HomeBody extends Component {
   render() {
     return (
-      <Spring
-        config={{ duration: 2000 }}
-        from={{ marginTop: 1000, marginLeft: 1000 }}
-        to={{ marginTop: 0, marginLeft: 0 }}
-      >
-        {props => (
-          <div class="HBWrapper" style={props}>
+      // <Spring
+      //   config={{ duration: 2000 }}
+      //   from={{ marginTop: 1000, marginLeft: 1000 }}
+      //   to={{ marginTop: 0, marginLeft: 0 }}
+      // >
+      //   {props => (
+          // <div class="HBWrapper" style={props}>
+          <div className='HBWrapper'>
             <div className="MenuWrap">
               <STMenu />
               <div className="SubNav">
@@ -59,8 +60,8 @@ export default class HomeBody extends Component {
               </div>
             </div>
           </div>
-        )}
-      </Spring>
+      //   )}
+      // </Spring>
     );
   }
 }

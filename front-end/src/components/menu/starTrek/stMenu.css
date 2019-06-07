@@ -128,32 +128,37 @@ span:hover::after {
   justify-content: space-around;
 }
 
-
 .SubNavBtn {
-    background-color: transparent;
-    border-radius: 8px;
-    border: none;
-    display: inline-block;
-    cursor: pointer;
-    color: wheat;
-    font-family: 'Stylish', sans-serif;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: .5%;
-    text-decoration: none;
-    margin: 7%;
-    animation: buttonPulse;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
+  background-color: transparent;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: wheat;
+  font-family: "Stylish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5%;
+  text-decoration: none;
+  margin: 7%;
+  animation: buttonPulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes buttonPulse {
-    from { transform: scale(1); }
-    50% { transform: scale(0.50); }
-    to { transform: scale(1); }
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .SubNavBtn:hover,
 .SubNavBtn:focus {
-    animation-name: unset;
+  animation-name: unset;
 }
