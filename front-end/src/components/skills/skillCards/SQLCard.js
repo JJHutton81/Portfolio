@@ -5,6 +5,8 @@ import PieChart from "react-minimal-pie-chart";
 
 import "../skills.css";
 
+import Dragon from '../../../media/dragon.jpg';
+
 export default function SQLCard() {
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
@@ -17,6 +19,18 @@ export default function SQLCard() {
       <a.div
         className="SkillCard"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
+      >
+        <img className="drag" src={Dragon} />
+        <button className="cardButton">
+          <p class="pButt">Click Me</p>
+        </button>
+      </a.div>
+      <a.div
+        className="SkillCard"
+        style={{
+          opacity,
+          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
+        }}
       >
         <PieChart
           data={[
@@ -43,20 +57,6 @@ export default function SQLCard() {
           rounded={"true"}
         />
         <h2 class="SkillTag">SQL</h2>
-      </a.div>
-      <a.div
-        className="SkillCard"
-        style={{
-          opacity,
-          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
-        }}
-      >
-        <h3 className="SkillCardBack">
-          SQL (Structured Query Language) is a domain-specific language used in
-          programming and designed for managing data held in a relational
-          database management system (RDBMS), or for stream processing in a
-          relational data stream management system (RDSMS).
-        </h3>
       </a.div>
     </div>
   );

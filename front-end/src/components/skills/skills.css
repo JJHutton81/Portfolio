@@ -88,3 +88,26 @@
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
+
+.drag {
+  width: 100%;
+  height: auto;
+}
+
+.cardButton {
+  background-color: black;
+  border-radius: 8px;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  color: wheat;
+  font-family: "Stylish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.5% 2.5%;
+  text-decoration: none;
+  animation: buttonPulse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}

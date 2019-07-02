@@ -5,6 +5,8 @@ import PieChart from "react-minimal-pie-chart";
 
 import "../skills.css";
 
+import Dragon from '../../../media/dragon.jpg';
+
 export default function NodeCard() {
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
@@ -17,6 +19,18 @@ export default function NodeCard() {
       <a.div
         className="SkillCard"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
+      >
+        <img className="drag" src={Dragon} />
+        <button className="cardButton">
+          <p class="pButt">Click Me</p>
+        </button>
+      </a.div>
+      <a.div
+        className="SkillCard"
+        style={{
+          opacity,
+          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
+        }}
       >
         <PieChart
           data={[
@@ -43,20 +57,6 @@ export default function NodeCard() {
           rounded={"true"}
         />
         <h2 class="SkillTag">NodeJS</h2>
-      </a.div>
-      <a.div
-        className="SkillCard"
-        style={{
-          opacity,
-          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
-        }}
-      >
-        <h3 className="SkillCardBack">
-          Node.js lets developers use JavaScript to write command line tools and
-          for server-side scripting—running scripts server-side to produce
-          dynamic web page content before the page is sent to the user's web
-          browser.
-        </h3>
       </a.div>
     </div>
   );

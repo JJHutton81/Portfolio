@@ -5,6 +5,8 @@ import PieChart from "react-minimal-pie-chart";
 
 import "../skills.css";
 
+import Dragon from '../../../media/dragon.jpg';
+
 export default function Photoshop() {
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
@@ -17,6 +19,18 @@ export default function Photoshop() {
       <a.div
         className="SkillCard"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
+      >
+        <img className="drag" src={Dragon} />
+        <button className="cardButton">
+          <p class="pButt">Click Me</p>
+        </button>
+      </a.div>
+      <a.div
+        className="SkillCard"
+        style={{
+          opacity,
+          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
+        }}
       >
         <PieChart
           data={[
@@ -43,20 +57,6 @@ export default function Photoshop() {
           rounded={"true"}
         />
         <h2 class="SkillTag">Photoshop</h2>
-      </a.div>
-      <a.div
-        className="SkillCard"
-        style={{
-          opacity,
-          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
-        }}
-      >
-        <h3 className="SkillCardBack">
-          Adobe Photoshop is a raster graphics editor developed and published by
-          Adobe Inc. for Windows and macOS. This software has become the
-          industry standard not only in raster graphics editing, but in digital
-          art as a whole.
-        </h3>
       </a.div>
     </div>
   );

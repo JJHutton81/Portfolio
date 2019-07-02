@@ -1,22 +1,36 @@
-import { render } from 'react-dom'
-import React, { useState } from 'react'
-import { useSpring, animated as a } from 'react-spring'
-import PieChart from 'react-minimal-pie-chart';
+import { render } from "react-dom";
+import React, { useState } from "react";
+import { useSpring, animated as a } from "react-spring";
+import PieChart from "react-minimal-pie-chart";
 
-import '../skills.css';
+import "../skills.css";
+
+import Dragon from "../../../media/dragon.jpg";
 
 export default function HTMLCard() {
-  const [flipped, set] = useState(false)
+  const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
     transform: `perspective(600px) rotateY(${flipped ? 180 : 0}deg)`,
     config: { mass: 5, tension: 500, friction: 80 }
-  })
+  });
   return (
     <div onClick={() => set(state => !state)}>
       <a.div
         className="SkillCard"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
+      >
+        <img className="drag" src={Dragon} />
+        <button className="cardButton">
+          <p class="pButt">Click Me</p>
+        </button>
+      </a.div>
+      <a.div
+        className="SkillCard"
+        style={{
+          opacity,
+          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
+        }}
       >
         <PieChart
           data={[
@@ -44,22 +58,8 @@ export default function HTMLCard() {
         />
         <h2 class="SkillTag">HTML</h2>
       </a.div>
-      <a.div
-        className="SkillCard"
-        style={{
-          opacity,
-          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
-        }}
-      >
-        <h3 className="SkillCardBack">
-          Hypertext Markup Language (HTML) is the standard markup language for
-          documents designed to be displayed in a web browser. It can be
-          assisted by technologies such as Cascading Style Sheets (CSS) and
-          scripting languages such as JavaScript.
-        </h3>
-      </a.div>
     </div>
   );
 }
 
-render(<HTMLCard />, document.getElementById('root'))
+render(<HTMLCard />, document.getElementById("root"));

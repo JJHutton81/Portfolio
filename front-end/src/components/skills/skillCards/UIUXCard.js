@@ -5,6 +5,8 @@ import PieChart from "react-minimal-pie-chart";
 
 import "../skills.css";
 
+import Dragon from '../../../media/dragon.jpg';
+
 export default function UIUXCard() {
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
@@ -17,6 +19,18 @@ export default function UIUXCard() {
       <a.div
         className="SkillCard"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
+      >
+        <img className="drag" src={Dragon} />
+        <button className="cardButton">
+          <p class="pButt">Click Me</p>
+        </button>
+      </a.div>
+      <a.div
+        className="SkillCard"
+        style={{
+          opacity,
+          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
+        }}
       >
         <PieChart
           data={[
@@ -43,19 +57,6 @@ export default function UIUXCard() {
           rounded={"true"}
         />
         <h2 class="SkillTag">UI/UX</h2>
-      </a.div>
-      <a.div
-        className="SkillCard"
-        style={{
-          opacity,
-          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
-        }}
-      >
-        <h3 className="SkillCardBack">
-          UX design refers to user experience design, while UI design stands for
-          user interface design. Both of these are crucial to an IT product and
-          need to work closely together.
-        </h3>
       </a.div>
     </div>
   );

@@ -5,6 +5,8 @@ import PieChart from "react-minimal-pie-chart";
 
 import "../skills.css";
 
+import Dragon from '../../../media/dragon.jpg';
+
 export default function CSSCard() {
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
@@ -17,6 +19,18 @@ export default function CSSCard() {
       <a.div
         className="SkillCard"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
+      >
+        <img className="drag" src={Dragon} />
+        <button className="cardButton">
+          <p class="pButt">Click Me</p>
+        </button>
+      </a.div>
+      <a.div
+        className="SkillCard"
+        style={{
+          opacity,
+          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
+        }}
       >
         <PieChart
           data={[
@@ -43,20 +57,6 @@ export default function CSSCard() {
           rounded={"true"}
         />
         <h2 class="SkillTag">CSS</h2>
-      </a.div>
-      <a.div
-        className="SkillCard"
-        style={{
-          opacity,
-          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
-        }}
-      >
-        <h3 className='SkillCardBack'>
-          Cascading Style Sheets (CSS) is a style sheet language used for
-          describing the presentation of a document written in a markup language
-          like HTML. CSS is a cornerstone technology of the World Wide Web,
-          alongside HTML and JavaScript.
-        </h3>
       </a.div>
     </div>
   );

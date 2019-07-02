@@ -6,6 +6,8 @@ import PieChart from "react-minimal-pie-chart";
 
 import "../skills.css";
 
+import Dragon from '../../../media/dragon.jpg';
+
 export default function ReactCard() {
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({
@@ -18,6 +20,18 @@ export default function ReactCard() {
       <a.div
         className="SkillCard"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
+      >
+        <img className="drag" src={Dragon} />
+        <button className="cardButton">
+          <p class="pButt">Click Me</p>
+        </button>
+      </a.div>
+      <a.div
+        className="SkillCard"
+        style={{
+          opacity,
+          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
+        }}
       >
         <PieChart
           data={[
@@ -44,19 +58,6 @@ export default function ReactCard() {
           rounded={"true"}
         />
         <h2 class="SkillTag">React</h2>
-      </a.div>
-      <a.div
-        className="SkillCard"
-        style={{
-          opacity,
-          transform: transform.interpolate(t => `${t} rotateY(180deg)`)
-        }}
-      >
-        <h3 className="SkillCardBack">
-          React (also known as React.js or ReactJS) is a JavaScript library for
-          building user interfaces. It is maintained by Facebook and a community
-          of individual developers and companies.
-        </h3>
       </a.div>
     </div>
   );
