@@ -5,6 +5,7 @@ import { Spring } from "react-spring/renderprops";
 import Heart from '../../media/heart.png';
 
 import './landing.css';
+import './landingMobile.css';
 
 export default class LandingPange extends Component {
   constructor(props) {
