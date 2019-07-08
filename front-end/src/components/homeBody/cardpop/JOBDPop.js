@@ -38,9 +38,9 @@ export default class JOBDPop extends Component {
         style => (
           <animated.div style={{ ...style }} className='JOBDcard'>
             <h1 className='CTitle'>We take the hitch out of getting hitched.</h1>
-            <h2 className='CText'>This is my Capstone prject while attending Lambda School.
-              This app helps consumers handle thier wedding guest list digitally, simplifying the RSVP process, by allowing people to handle it digitally.
-              There are several other features that incentivize the consumer to use the app over traditional wedding invitations, or in conjuction with them.</h2>
+            <h2 className='CText'>This is my Capstone project while attending Lambda School.
+              This app helps consumers handle their wedding guest list digitally, simplifying the RSVP process, by allowing people to handle it digitally.
+              There are several other features that incentivize the consumer to use the app over traditional wedding invitations, or in conjunction with them.</h2>
             <span className='PsudoButt' onClick={this.toggle}>Learn Even More</span>
             <span className='PsudoButt' onClick={this.toggleClose}>Close</span>
           </animated.div>
