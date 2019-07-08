@@ -1,0 +1,19 @@
+@media only screen and (max-width: 812px) {
+
+    .AMWrap {
+        overflow: hidden;
+    }
+
+    .SiteTitle {
+        font-size: 1.2rem;
+    }
+
+    .SubNav {
+        height: 9vh;
+    }
+
+    .SubNavBtn {
+        font-size: 1rem;
+        margin-bottom: 20%;
+    }
+}    

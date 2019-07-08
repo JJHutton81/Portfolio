@@ -1,0 +1,15 @@
+@media only screen and (max-width: 812px) {
+
+    .SiteTitle {
+        font-size: 1.5rem;
+        padding: 1%;
+    }
+
+    .STMButton {
+        display: none;
+    }
+
+    .wrapper {
+        height: 7vh;
+    }
+}

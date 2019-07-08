@@ -11,6 +11,7 @@ import Resp from "./icons/responsive.png";
 import Head from "./icons/headshot.jpg";
 
 import "./aboutMe.css";
+import './aboutMobile.css';
 import "../landing/landing.css";
 
 export default class AboutMe extends Component {

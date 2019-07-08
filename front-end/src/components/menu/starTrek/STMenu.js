@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { css } from 'glamor';
 
 import './stMenu.css';
+import './stMenuMobile.css';
 
 const LinkStyle = css({
   fontFamily: "Stylish, sans-serif",
