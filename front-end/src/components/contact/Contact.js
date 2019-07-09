@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import STMenu from "../menu/starTrek/STMenu";
 
 import "./contact.css";
+import './contactMobile.css';
 
 export default class Contact extends Component {
   state = { index: 0 };

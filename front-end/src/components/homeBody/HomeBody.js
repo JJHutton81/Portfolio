@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Spring } from "react-spring/renderprops";
 
 import "./homeBody.css";
+import './HomeBodyMobile.css';
 
 import STMenu from "../menu/starTrek/STMenu";
 import JOBDPop from "./cardpop/JOBDPop";

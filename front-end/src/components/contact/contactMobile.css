@@ -1,0 +1,14 @@
+@media only screen and (max-width: 812px) {
+    
+    .ContactTitle {
+        font-size: 1rem;
+    }
+
+    .PsudoButt {
+        font-size: 1rem;
+    }
+
+    .Btn {
+        font-size: 1rem;
+    }
+}
