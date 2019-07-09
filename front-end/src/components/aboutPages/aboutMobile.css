@@ -2,6 +2,7 @@
 
     .AMWrap {
         overflow: hidden;
+        height: 153vh;
     }
 
     .SiteTitle {
@@ -15,5 +16,45 @@
     .SubNavBtn {
         font-size: 1rem;
         margin-bottom: 20%;
+    }
+
+    .AMBodyWrapper {
+        flex-wrap: wrap;
+    }
+
+    .AMCardWrapper {
+        width: 40%;
+        height: 35vh;
+        margin: 1.5%;
+        padding: 2.5%;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .AMCard2Boday {
+        margin: 2.5%;
+        height: auto;
+    }
+
+    .AMCTitle {
+        text-align: center;
+        margin: 1.5%;
+        font-size: 1rem;
+    }
+
+    .Head {
+        display: none;
+    }
+
+    .AMCText {
+        font-size: 1rem;
+        padding-top: 1%;
+    }
+
+    .AMCText2 {
+        text-align: center;
+        margin: 1.5%;
     }
 }    
