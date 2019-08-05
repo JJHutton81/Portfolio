@@ -19,6 +19,7 @@
     "react-scripts": "3.0.0",
     "react-spring": "^8.0.20",
     "react-transition-group": "^4.0.1",
+    "react-use-gesture": "^5.2.3",
     "react-youtube": "^7.9.0"
   },
   "scripts": {

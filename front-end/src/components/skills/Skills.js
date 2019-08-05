@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import { Spring } from "react-spring/renderprops";
-import { NavLink } from "react-router-dom";
+
 
 import STMenu from "../menu/starTrek/STMenu";
 import HTMLCard from "../skills/skillCards/HTMLCard";
@@ -15,241 +13,55 @@ import Photoshop from "../skills/skillCards/Photoshop";
 import Illustator from "../skills/skillCards/Illustrator";
 
 import "./skills.css";
+import { render } from 'react-dom'
+import React, { useState } from 'react'
+import { useSprings, animated, interpolate } from 'react-spring'
+import { useGesture } from 'react-use-gesture'
 
-export default class Skills extends Component {
-  render() {
-    return (
-      // <Spring
-      //   config={{ duration: 2000 }}
-      //   from={{ marginTop: 1000, marginLeft: 1000 }}
-      //   to={{ marginTop: 0, marginLeft: 0 }}
-      // >
-      //   {props => (
-          // <div className="SkillBody" style={props}>
-            <div className='SkillBody'>
-            <div className="MenuWrap">
-              <STMenu />
-              <div className="SubNav">
-                <NavLink
-                  to="/projects"
-                  style={{
-                    display: "flex",
-                    textDecoration: "none",
-                    alignSelf: "flex-end",
-                    marginRight: "2%"
-                  }}
-                >
-                  <button className="SubNavBtn">
-                    <p class="pButt">Projects</p>
-                  </button>
-                </NavLink>
-                <h1 class="SiteTitle">Skill Set</h1>
-                <NavLink
-                  to="/contact"
-                  style={{
-                    display: "flex",
-                    textDecoration: "none",
-                    alignSelf: "flex-end",
-                    marginRight: "2%"
-                  }}
-                >
-                  <button className="SubNavBtn">
-                    <p class="pButt">Contact</p>
-                  </button>
-                </NavLink>
-              </div>
-            </div>
-            <div className="CardBody">
-              <div class="CardWrapper1-5">
-                <Spring
-                  config={{ duration: 1300, delay: 2500 }}
-                  from={{
-                    transform:
-                      "translate3d(800px,500px,0) scale(2) rotateY(360deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform: "translate3d(0px,0,0) scale(1) rotateY(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <HTMLCard />
-                    </div>
-                  )}
-                </Spring>
-                <Spring
-                  config={{ duration: 1000, delay: 4000 }}
-                  from={{
-                    transform:
-                      "translate3d(100px,-600px,0) scale(2) rotateX(360deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform: "translate3d(0px,0,0) scale(1) rotateX(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <CSSCard />
-                    </div>
-                  )}
-                </Spring>
-                <Spring
-                  config={{ duration: 1000, delay: 3500 }}
-                  from={{
-                    transform:
-                      "translate3d(200px,600px,0) scale(3) rotateY(360deg) rotateX(360deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform:
-                      "translate3d(0px,0,0) scale(1) rotateY(0deg) rotateX(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <JavaScriptCard />
-                    </div>
-                  )}
-                </Spring>
-                <Spring
-                  config={{ duration: 700, delay: 2500 }}
-                  from={{
-                    transform:
-                      "translate3d(-170px,500px,0) scale(3) rotateY(360deg) rotateX(360deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform:
-                      "translate3d(0px,0,0) scale(1) rotateY(0deg) rotateX(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <ReactCard />
-                    </div>
-                  )}
-                </Spring>
-                <Spring
-                  config={{ duration: 900, delay: 2000 }}
-                  from={{
-                    transform:
-                      "translate3d(400px,-600px,0) scale(3) rotateY(360deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform: "translate3d(0px,0,0) scale(1) rotateY(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <NodeCard />
-                    </div>
-                  )}
-                </Spring>
-              </div>
-              <div className="CardWrapper6-10">
-                <Spring
-                  config={{ duration: 1800, delay: 3000 }}
-                  from={{
-                    transform:
-                      "translate3d(800px,500px,0) scale(2) rotateX(180deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform: "translate3d(0px,0,0) scale(1) rotateX(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <SQLCard />
-                    </div>
-                  )}
-                </Spring>
-                <Spring
-                  config={{ duration: 1000, delay: 3000 }}
-                  from={{
-                    transform:
-                      "translate3d(500px,-600px,0) scale(2) rotateX(360deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform: "translate3d(0px,0,0) scale(1) rotateX(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <UIUXCard />
-                    </div>
-                  )}
-                </Spring>
-                <Spring
-                  config={{ duration: 1000, delay: 2500 }}
-                  from={{
-                    transform:
-                      "translate3d(100px,-600px,0) scale(2) rotateX(360deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform: "translate3d(0px,0,0) scale(1) rotateX(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <PythonCard />
-                    </div>
-                  )}
-                </Spring>
-                <Spring
-                  config={{ duration: 800, delay: 3000 }}
-                  from={{
-                    transform:
-                      "translate3d(-800px,-500px,0) scale(2) rotateX(180deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform: "translate3d(0px,0,0) scale(1) rotateX(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <Photoshop />
-                    </div>
-                  )}
-                </Spring>
-                <Spring
-                  config={{ duration: 1000, delay: 3500 }}
-                  from={{
-                    transform:
-                      "translate3d(800px,500px,0) scale(2) rotateX(180deg)",
-                    opacity: 0
-                  }}
-                  to={{
-                    transform: "translate3d(0px,0,0) scale(1) rotateX(0deg)",
-                    opacity: 1
-                  }}
-                >
-                  {props => (
-                    <div style={props}>
-                      <Illustator />
-                    </div>
-                  )}
-                </Spring>
-              </div>
-            </div>
-          </div>
-      //   )}
-      // </Spring>
-    );
-  }
+const cards = [
+  <HTMLCard />,
+  <CSSCard />,
+  <JavaScriptCard />,
+  <ReactCard />,
+  <NodeCard />,
+  <SQLCard />,
+  <UIUXCard />,
+  <PythonCard />,
+  <Photoshop />,
+  <Illustator />
+]
+
+// These two are just helpers, they curate spring data, values that are later being interpolated into css
+const to = i => ({ x: 0, y: i * -4, scale: 1, rot: -10 + Math.random() * 20, delay: i * 100 })
+const from = i => ({ x: 0, rot: 0, scale: 1.5, y: -1000 })
+// This is being used down there in the view, it interpolates rotation and scale into a css transform
+const trans = (r, s) => `perspective(1500px) rotateX(30deg) rotateY(${r / 10}deg) rotateZ(${r}deg) scale(${s})`
+
+export default function Skills() {
+  const [gone] = useState(() => new Set()) // The set flags all the cards that are flicked out
+  const [props, set] = useSprings(cards.length, i => ({ ...to(i), from: from(i) })) // Create a bunch of springs using the helpers above
+  // Create a gesture, we're interested in down-state, delta (current-pos - click-pos), direction and velocity
+  const bind = useGesture(({ args: [index], down, delta: [xDelta], distance, direction: [xDir], velocity }) => {
+    const trigger = velocity > 0.2 // If you flick hard enough it should trigger the card to fly out
+    const dir = xDir < 0 ? -1 : 1 // Direction should either point left or right
+    if (!down && trigger) gone.add(index) // If button/finger's up and trigger velocity is reached, we flag the card ready to fly out
+    set(i => {
+      if (index !== i) return // We're only interested in changing spring-data for the current spring
+      const isGone = gone.has(index)
+      const x = isGone ? (200 + window.innerWidth) * dir : down ? xDelta : 0 // When a card is gone it flys out left or right, otherwise goes back to zero
+      const rot = xDelta / 100 + (isGone ? dir * 10 * velocity : 0) // How much the card tilts, flicking it harder makes it rotate faster
+      const scale = down ? 1.1 : 1 // Active cards lift up a bit
+      return { x, rot, scale, delay: undefined, config: { friction: 50, tension: down ? 800 : isGone ? 200 : 500 } }
+    })
+    if (!down && gone.size === cards.length) setTimeout(() => gone.clear() || set(i => to(i)), 600)
+  })
+  // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
+  return props.map(({ x, y, rot, scale }, i) => (
+    <animated.div className="Deck" key={i} style={{ transform: interpolate([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
+      {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
+      <animated.div className="CardImage" {...bind(i)} style={{ transform: interpolate([rot, scale], trans), backgroundImage: `url(${cards[i]})` }} />
+    </animated.div>
+  ))
 }
+
+render(<Skills />, document.getElementById('root'))
