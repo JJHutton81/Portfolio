@@ -1,17 +1,3 @@
-
-
-import STMenu from "../menu/starTrek/STMenu";
-import HTMLCard from "../skills/skillCards/HTMLCard";
-import CSSCard from "../skills/skillCards/CSSCard";
-import JavaScriptCard from "../skills/skillCards/JavaScriptCard";
-import ReactCard from "../skills/skillCards/ReactCard";
-import NodeCard from "../skills/skillCards/NodeCard";
-import SQLCard from "../skills/skillCards/SQLCard";
-import UIUXCard from "../skills/skillCards/UIUXCard";
-import PythonCard from "../skills/skillCards/PythonCard";
-import Photoshop from "../skills/skillCards/Photoshop";
-import Illustator from "../skills/skillCards/Illustrator";
-
 import "./skills.css";
 import { render } from 'react-dom'
 import React, { useState } from 'react'

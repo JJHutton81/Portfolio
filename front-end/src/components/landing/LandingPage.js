@@ -24,9 +24,10 @@ export default class LandingPange extends Component {
 
       return (
           <div class='LPBody'>
-            <div class='element'></div>
-            <div class='element2'>
-              <div class='heartWraper'>
+            <div class="stars"></div>
+<div class="twinkling"></div>
+<div class="clouds"></div>
+<div className="moon"></div>
                 <div class='landingCard'>
                   <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={3000}>
                   { props => (
@@ -74,11 +75,8 @@ export default class LandingPange extends Component {
                     ) 
                   } 
                   </Spring>
-                </div>
-                <img class='heartBeat' src={Heart} alt='A human heart' />
-              </div>
-            </div>
-          </div>
+                  </div>
+                  </div>
       )
     }
     }
