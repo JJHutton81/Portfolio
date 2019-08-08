@@ -6,12 +6,31 @@
     align-items: center;
 }
 
-.buttonWrap {
-    width: 40%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.none {
+  display: none;
+  -moz-animation: go-away 200s linear ease-in-out;
+  -ms-animation:go-away 200s linear ease-in-out;
+  -o-animation:go-away 200s linear ease-in-out;
+  -webkit-animation:go-away 200s linear ease-in-out;
+  animation:go-away 200s linear ease-in-out;
+}
+
+@keyframes go-away {
+  0%   {opacity: 1;}
+  99%  {opacity: 0;}
+  100%  {display: none;}
+}
+@-webkit-keyframes go-away {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes go-away {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes go-away {
+  from {background-position:0 0;}
+  to {background-position:-10000px 5000px;}
 }
 
 .landingCard {
@@ -33,93 +52,7 @@
   text-align: center;
   text-shadow: #000 2px 2px;
 }
-
-  .landingButton {
-	background-color: transparent;
-	-moz-border-radius: 8px;
-	-webkit-border-radius: 8px;
-	border-radius: 8px;
-	border: none;
-	display: inline-block;
-	cursor: pointer;
-	color: wheat;
-	font-family: 'Stylish', sans-serif;
-	font-size: 1.5rem;
-	font-weight: bold;
-  text-decoration: none;
-  }
-
-  .fall{
-    background-color: wheat;
-	  -moz-border-radius: 8px;
-	  -webkit-border-radius: 8px;
-	  border-radius: 8px;
-	  border: none;
-	  display: inline-block;
-	  cursor: pointer;
-	  color: #001F3F;
-	  font-family: 'Stylish', sans-serif;
-	  font-size: 1.5rem;
-	  font-weight: bold;
-    text-decoration: none;  
-    animation: drop 1s forwards;
-  }
-  @keyframes drop {
-    0% {
-      transform-origin: center;
-      opacity: 1;
-    }
-    20% {
-      transform: 
-        translate3d(0, 20px, 0)
-        rotate3d(0, 0, 1, -10deg);
-      opacity: 1;
-    }
-    40%, 45% {
-      transform: 
-        translate3d(0, -120px, 0)
-        rotate3d(0, 0, 1, 10deg);
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-      transform: 
-        translate3d(0, 2000px, 0)
-        rotate3d(0, 0, 1, 10deg);
-    }
-}
-
-.landingButton:hover {
-    background-color: wheat;
-    color: #001F3F;
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
-  }
-  
-  @keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
-    
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
-  
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-  
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
- }
-
-.landingButton:active {
-	position: relative;
-	top: 1px;
-}
+ 
 
 /* Twinkle starts here */
 
