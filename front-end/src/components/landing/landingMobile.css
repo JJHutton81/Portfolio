@@ -1,53 +1,18 @@
 @media only screen and (max-width: 812px) {
-
-    .LPBody {
-        position: fixed;
-    }
-
-    .landingCard > h1 {
-      font-size: 1.8rem;
-      padding: 1.5%;
-    }
-
-    .heartBeat {
-      display: none;  
-    }
-
-    .landingCard {
-        border-radius: 114px;
-        height: 114%;
-        width: 93%;
-    }
-
-    .element {
-        width: 80%;
-        height: 80vh;
-        position: absolute;
-        animation: pulseMobile 3s ease-in-out infinite;
-        animation-direction: alternate;
-        animation-delay: 1s;
-        z-index: 1;
-        border-radius: 120px;
-        overflow: hidden;
-    }
-
-    @keyframes pulseMobile {
-        0% {
-          background-color: #001F3F;
-          width: 50%;
-          height: 50vh;
-        }
-        100% {
-          background-color:  #FF4136;
-          width: 120%;
-         height: 120vh;
-        }
-      }
-    
-    .element2 {
-        width: 95%;
-        height: 96vh;
-        align-items: center;
-        display: flex;
-    }  
+  .landingCard > h1 {
+    font-size: 2rem;
+    color: wheat;
+    font-family: 'Stylish', sans-serif;
+    text-align: center;
+    text-shadow: #000 2px 2px;
+    margin: 5%;
   }
+
+  .landingCard {
+    height: auto;
+  }
+
+  .moon {
+    width: 100%;
+  }
+}

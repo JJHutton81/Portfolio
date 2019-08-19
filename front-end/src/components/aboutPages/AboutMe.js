@@ -18,44 +18,18 @@ export default class AboutMe extends Component {
   render() {
     return (
       <div className="AMWrap">
-        <div className="MenuWrap">
+        <div className="menu-wrap">
           <STMenu />
-          <div className="SubNav">
-            <NavLink
-              to="/"
-              style={{
-                display: "flex",
-                textDecoration: "none",
-                alignSelf: "flex-end",
-                marginRight: "2%"
-              }}
-            >
-              <button className="SubNavBtn">
-                <p class="pButt">Home</p>
-              </button>
-            </NavLink>
-            <h1 class="SiteTitle">About Me</h1>
-            <NavLink
-              to="/projects"
-              style={{
-                display: "flex",
-                textDecoration: "none",
-                alignSelf: "flex-end",
-                marginRight: "2%"
-              }}
-            >
-              <button className="SubNavBtn">
-                <p class="pButt">Projects</p>
-              </button>
-            </NavLink>
-          </div>
+        </div>
+        <div className="title">
+          <h1>About Me</h1>
         </div>
 
         <div className="AMBodyWrapper">
           <Spring
             from={{ opacity: 0, marginBottom: -1000 }}
             to={{ opacity: 1, marginBottom: 0.5 }}
-            delay={3000}
+            delay={500}
           >
             {props => (
               <div className="AMCardWrapper" style={props}>
@@ -72,7 +46,7 @@ export default class AboutMe extends Component {
           <Spring
             from={{ opacity: 0, marginBottom: -1000 }}
             to={{ opacity: 1, marginBottom: 0.5 }}
-            delay={3500}
+            delay={600}
           >
             {props => (
               <div className="AMCardWrapper" style={props}>
@@ -90,7 +64,7 @@ export default class AboutMe extends Component {
           <Spring
             from={{ opacity: 0, marginBottom: -1000 }}
             to={{ opacity: 1, marginBottom: 0.5 }}
-            delay={4000}
+            delay={700}
           >
             {props => (
               <div className="AMCardWrapper" style={props}>
@@ -107,7 +81,7 @@ export default class AboutMe extends Component {
           <Spring
             from={{ opacity: 0, marginBottom: -1000 }}
             to={{ opacity: 1, marginBottom: 0.5 }}
-            delay={4500}
+            delay={800}
           >
             {props => (
               <div className="AMCardWrapper" style={props}>
@@ -126,13 +100,13 @@ export default class AboutMe extends Component {
           <Spring
             from={{ opacity: 0, marginTop: -1000 }}
             to={{ opacity: 1, marginTop: 0.5 }}
-            delay={5000}
+            delay={1000}
           >
             {props => (
               <div className="AMCardWrapper2" style={props}>
-                {/* <div class="hexagon2"> */}
+             
                 <img className="Head" src={Head} alt="My Headshot" />
-                {/* </div> */}
+             
                 <div className="AMCSubWrapper">
                   <h2 className="AMCTitle">Who am I?</h2>
                   <h3 className="AMCText2">
@@ -143,7 +117,7 @@ export default class AboutMe extends Component {
                     transitioned my skills to Web Development.
                   </h3>
                   <h3 className="AMCText2">
-                    I love UI effects, animations, and creating intuitive,
+                    I love special effects, animations, and creating intuitive,
                     dynamic, and memorable user experiences.
                   </h3>
                   <h3 className="AMCText2">
@@ -159,6 +133,34 @@ export default class AboutMe extends Component {
             )}
           </Spring>
         </div>
+        <div className="SubNav">
+            <NavLink
+              to="/"
+              style={{
+                display: "flex",
+                textDecoration: "none",
+                alignSelf: "flex-end",
+                marginRight: "2%"
+              }}
+            >
+              <button className="SubNavBtn">
+                <p class="pButt">Home</p>
+              </button>
+            </NavLink>
+            <NavLink
+              to="/projects"
+              style={{
+                display: "flex",
+                textDecoration: "none",
+                alignSelf: "flex-end",
+                marginRight: "2%"
+              }}
+            >
+              <button className="SubNavBtn">
+                <p class="pButt">Projects</p>
+              </button>
+            </NavLink>
+          </div>
       </div>
     );
   }

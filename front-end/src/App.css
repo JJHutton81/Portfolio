@@ -72,8 +72,60 @@ table {
 }
 
 body {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	background-size: cover;
 	position: absolute;
+	/* font-size 16px; */
+	font-size: 62.5%; /*16 x.625 = 10*/
+}
+
+.menu-wrap {
+	width: 100%;
+    height: 45px;
+    margin-bottom: .5%;
+    background-color: #001f3f;
+    position: fixed;
+    padding: 1%;
+    z-index: 1;
+}
+
+.title {
+	background-color: #001f3f;
+	width: 100%;
+	margin: 5% 0 2% 0;
+	padding: 2% 0;
+}
+
+.title h1 {
+	text-align: center;
+	font-size: 2rem;
+	color: wheat;
+	font-family: "Righteous", cursive;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+    border-radius: 8px; 
+}
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 25px;
+	background: darkgrey;
+}
+  
+@media only screen and (max-width: 812px) {
+	.title h1 {
+		font-size: 1.6rem;
+		padding-top:14%;
+	}
 }

@@ -2,30 +2,16 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Spring } from "react-spring/renderprops";
 
-import Heart from '../../media/heart.png';
-
 import './landing.css';
 import './landingMobile.css';
 
 export default class LandingPange extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      isActive: true,
-    };
-  }
-
-  ToggleClass = (e) => {
-    this.setState({ isActive: !this.state.isActive })
-  }
+  
 
   render() {
 
       return (
-          <div 
-            className={(this.state.isActive) ? 'LPBody' : 'none'} 
-            onClick={this.ToggleClass}>
+          <div className="LPBody">
             <div class="stars"></div>
             <div class="twinkling"></div>
             <div class="clouds"></div>
@@ -64,13 +50,17 @@ export default class LandingPange extends Component {
                 } 
               </Spring>
               <Spring from={{ opacity: 0 }} to={{ opacity: 1 }} delay={11000}>
-                { props => (
-                    <h1 style={ props }>
-                    Click anywhere to get started.
-                  </h1>
-                  ) 
-                } 
-                </Spring>
+                  { props => (
+                    <div class='buttonWrap' style={ props }>
+                      <Link to='/about'> 
+                        
+                          <h1>Click here to get started</h1>  
+                        
+                      </Link>
+                    </div>  
+                    ) 
+                  } 
+                  </Spring>
               </div>
             </div>
     )

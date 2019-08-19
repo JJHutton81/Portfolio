@@ -1,12 +1,12 @@
 @media only screen and (max-width: 812px) {
 
     .AMWrap {
-        overflow: hidden;
-        height: 159vh;
+        /* overflow: hidden;
+        height: 159vh; */
     }
 
     .SiteTitle {
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
 
     .SubNav {
@@ -14,7 +14,7 @@
     }
 
     .SubNavBtn {
-        font-size: 1rem;
+        font-size: 1.6rem;
         margin-bottom: 20%;
     }
 
@@ -24,7 +24,7 @@
 
     .AMCardWrapper {
         width: 40%;
-        height: 35vh;
+        height: 220px;
         margin: 1.5%;
         padding: 2.5%;
     }
@@ -36,6 +36,7 @@
     .AMCard2Boday {
         margin: 2.5%;
         height: auto;
+        width: 92%;
     }
 
     .AMCTitle {

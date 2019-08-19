@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Spring } from "react-spring/renderprops";
+// import { Spring } from "react-spring/renderprops";
 
 import "./homeBody.css";
 import './HomeBodyMobile.css';
