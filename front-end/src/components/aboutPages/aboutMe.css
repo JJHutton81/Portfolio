@@ -1,12 +1,4 @@
-.AMWrap {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-size: cover;
-  position: relative;
-  background-color: rgb(161, 181, 202);
-}
+
 
 .MenuWrap {
   width: 100%;

@@ -1,7 +1,6 @@
 .JOBDcard {
-    position: absolute;
-    width: 40%;
-    height: 47vh;
+    /* position: absolute; */
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -12,6 +11,11 @@
     border-radius: 8px;
     border-top: 7px double #001F3F;
     border-bottom: 7px double #001F3F;
+}
+
+.CardClick {
+    display: flex;
+    justify-content: center;
 }
 
 .CTextWrap {

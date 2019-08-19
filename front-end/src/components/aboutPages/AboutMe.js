@@ -17,7 +17,7 @@ import "../landing/landing.css";
 export default class AboutMe extends Component {
   render() {
     return (
-      <div className="AMWrap">
+      <div className="page-wrap">
         <div className="menu-wrap">
           <STMenu />
         </div>

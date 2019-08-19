@@ -19,10 +19,22 @@ export default class HomeBody extends Component {
       // >
       //   {props => (
           // <div class="HBWrapper" style={props}>
-          <div className='HBWrapper'>
-            <div className="MenuWrap">
+          <div className='page-wrap'>
+            <div className="menu-wrap">
               <STMenu />
-              <div className="SubNav">
+              <div className="title">
+                <h1>Projects</h1>
+              </div>
+            </div>
+            
+              <div class="cardWrapper">
+                <div className="cardContainer">
+                  <JOBDPop />
+                  <NTAPop />
+                </div>
+              </div>
+            
+            <div className="SubNav">
                 <NavLink
                   to="/about"
                   style={{
@@ -36,7 +48,7 @@ export default class HomeBody extends Component {
                     <p class="pButt">About</p>
                   </button>
                 </NavLink>
-                <h1 class="SiteTitle">Projects</h1>
+                
                 <NavLink
                   to="/skills"
                   style={{
@@ -51,16 +63,8 @@ export default class HomeBody extends Component {
                   </button>
                 </NavLink>
               </div>
-            </div>
-            <div class="headerBody">
-              <div class="cardWrapper">
-                <div className="cardContainer">
-                  <JOBDPop />
-                  <NTAPop />
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
+        
       //   )}
       // </Spring>
     );

@@ -80,6 +80,18 @@ body {
 	font-size: 62.5%; /*16 x.625 = 10*/
 }
 
+/* End of CSS reset */
+
+.page-wrap {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-size: cover;
+	position: relative;
+	background-color: rgb(161, 181, 202);
+}
+
 .menu-wrap {
 	width: 100%;
     height: 45px;
