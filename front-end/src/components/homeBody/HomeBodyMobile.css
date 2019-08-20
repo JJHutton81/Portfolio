@@ -1,3 +1,17 @@
-@media only screen and (max-width: 812px) {
+@media only screen and (max-width: 800px) and (max-width: 475px) {
+    .cardWrapper {
+        height: 116vh;
+        display: flex;
+    }
 
+    .JOBDcard {
+        width: 95% !important;
+        margin: 3% auto!important;
+        height: 300px !important;
+        padding: 0 !important;
+    }
+
+    .BigPopWrap {
+        width: 100% !important;
+    }
 }

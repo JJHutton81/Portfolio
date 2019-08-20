@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import JOBDCarousel from './jobdCarousel/JOBDCarousel';
 
 import './jobdpop.css';
+import '../HomeBodyMobile.css'
 
 import JOBDThumb from '../homeTumbs/jobdthumb.png';
 import NLogo from '../homeTumbs/netlify.png';
