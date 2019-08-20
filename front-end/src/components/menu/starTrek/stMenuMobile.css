@@ -11,6 +11,7 @@
         padding-bottom: 2%;
         width: 100%;
         text-align: center;
+        margin-top: 3%;
     }
 
     .STMButton {
@@ -21,10 +22,11 @@
        /* padding-top: 5%; */
        flex-direction: column-reverse; 
        position: initial;
+       padding-bottom: 5%;
     }
 
     .sidebar {
-        padding: 0;
+        padding: 3% 0;
     }
 
     span {

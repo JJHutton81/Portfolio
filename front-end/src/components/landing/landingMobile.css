@@ -8,6 +8,11 @@
     margin: 5%;
   }
 
+  .landingCard :last-child {
+    font-size: 1.5rem;
+    margin-top: 2%;
+  }
+
   .landingCard {
     height: auto;
   }
