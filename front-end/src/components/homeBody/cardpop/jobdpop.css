@@ -1,6 +1,7 @@
 .JOBDcard {
-    /* position: absolute; */
-    
+    position: absolute;
+    width: 40%;
+    height: 47vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -51,7 +52,7 @@
 }
 
 .BigPopWrap {
-    width: 50vw;
+    width: 47vw;
 }
 
 .BigPop {

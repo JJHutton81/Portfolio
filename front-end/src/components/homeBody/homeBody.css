@@ -1,12 +1,14 @@
 
 
 .cardWrapper {
-    height: auto;
+    height: 70vh;
+    width: 100%;
 }
 
 .cardContainer {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .ProjectButton {
