@@ -22,9 +22,9 @@ export default class HomeBody extends Component {
           <div className='page-wrap'>
             <div className="menu-wrap">
               <STMenu />
-              <div className="title">
-                <h1>Projects</h1>
-              </div>
+            </div>
+            <div className="title">
+              <h1>Projects</h1>
             </div>
             
               <div class="cardWrapper">
