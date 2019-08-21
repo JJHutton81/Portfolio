@@ -17,6 +17,7 @@
     .TransitionWrap {
         align-items: baseline;
         margin-top: 3%;
+        height: 66.2vh;
     }
 
     .form-input {

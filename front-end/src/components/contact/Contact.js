@@ -65,39 +65,14 @@ export default class Contact extends Component {
       )
     ];
     return (
-      <div className="ContactBody">
-        <div className="MenuWrap">
+      <div className="page-wrap">
+        <div className="menu-wrap">
           <STMenu />
-          <div className="SubNav">
-            <NavLink
-              to="/skills"
-              style={{
-                display: "flex",
-                textDecoration: "none",
-                alignSelf: "flex-end",
-                marginRight: "2%"
-              }}
-            >
-              <button className="SubNavBtn">
-                <p class="pButt">Skills</p>
-              </button>
-            </NavLink>
-            <h1 class="SiteTitle">Contact Me</h1>
-            <NavLink
-              to="/"
-              style={{
-                display: "flex",
-                textDecoration: "none",
-                alignSelf: "flex-end",
-                marginRight: "2%"
-              }}
-            >
-              <button className="SubNavBtn">
-                <p class="pButt">Home</p>
-              </button>
-            </NavLink>
-          </div>
+        </div>  
+        <div className="title">
+          <h1>Contact Me</h1>
         </div>
+        
         <Spring
           from={{ opacity: 0 }}
           to={{ opacity: 1 }}
@@ -120,6 +95,35 @@ export default class Contact extends Component {
             </div>
           )}
         </Spring>
+        <div className="SubNav">
+            <NavLink
+              to="/skills"
+              style={{
+                display: "flex",
+                textDecoration: "none",
+                alignSelf: "flex-end",
+                marginRight: "2%"
+              }}
+            >
+              <button className="SubNavBtn">
+                <p class="pButt">Skills</p>
+              </button>
+            </NavLink>
+            
+            <NavLink
+              to="/"
+              style={{
+                display: "flex",
+                textDecoration: "none",
+                alignSelf: "flex-end",
+                marginRight: "2%"
+              }}
+            >
+              <button className="SubNavBtn">
+                <p class="pButt">Home</p>
+              </button>
+            </NavLink>
+          </div>
       </div>
     );
   }
