@@ -9,11 +9,19 @@ import SkillsDeck from "./SkillsDeck";
 export default class Skills extends Component {
     render() {
         return(
-            <div className="SkillBody">
-                <div className="MenuWrap">
-                  <STMenu />
-                </div>
-                <div className="SubNav">
+            <div className="page-wrap">
+              <div className="menu-wrap">
+                <STMenu />
+              </div>
+              <div className="title">
+                <h1>Skills</h1>
+              </div>
+                
+              <div className="skills-deck-wrap">
+                  <SkillsDeck />
+              </div>
+
+              <div className="SubNav">
                 <NavLink
                   to="/projects"
                   style={{
@@ -27,7 +35,9 @@ export default class Skills extends Component {
                     <p class="pButt">Projects</p>
                   </button>
                 </NavLink>
-                <h1 class="SiteTitle">Skills</h1>
+                  <div className="inst-wrap">
+                    <p className="instructions">Swipe or click and drag cards sharply.</p>
+                  </div>
                 <NavLink
                   to="/contact"
                   style={{
@@ -41,9 +51,6 @@ export default class Skills extends Component {
                     <p class="pButt">Contact</p>
                   </button>
                 </NavLink>
-              </div>
-              <div className="skills-deck-wrap">
-                  <SkillsDeck />
               </div>
             </div>
         )

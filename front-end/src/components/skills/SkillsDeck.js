@@ -1,8 +1,9 @@
-import "./skills.css";
 import { render } from 'react-dom'
 import React, { useState } from 'react'
 import { useSprings, animated, interpolate } from 'react-spring'
 import { useGesture } from 'react-use-gesture'
+
+import "./skills.css";
 
 const cards = [
   "https://lh3.googleusercontent.com/TBjYImjDLNcSvDwTATLvzhrlFn5MKypAJvlyZP_ayzLHul83xrXg7fZSYY0jROYe18s_oyyU4NjrEX_lowOR0RUQgd4iLXkNDB0tlPOXZg9HetwKGPS6p0FNZXo0o-n47BgeaLed4hX573kf-VdCeGBQu1yjn6DCFxP4Gx2rrQlzEbdvajS_JN016UmA99fbY3lz6GBUyZO_uzriQgQjF1sn3VdG3fkt-ow4ORn9MBB_a5YsqbCUwfFC-evcEnF84oTAFsuVA3QAf2hclmuiUlFUFQxYQ0dRA1hxMh_aU-pDvyC_fYtAxgRNdyk9JkJKauyg1f3OBcrYT2V0zmfjBGt-O9A_fbgLOqNvT1McLUPh-VH4WqqOCioklgOCDf1duV2UqVWUewjAKIHnJbD4ycLXtKvsj6g7bfpxpDJQuZ_99BjSmKMZqsk0S72jNvvLceniONe4rjXLOpngT0PDh_tDbiSWyohNxQ85gIUm0AYSSFtOD0cpENk6HSSrDHSZbJmYZhXh2TclL0it165gxbvkhkaNIAlAYfW1cFog_jPj8oT0un-g_tOY9MZhiqdMDblbgDaqyPsVT-1Uz1CX-wMfPOVwShT6OJgWbRqOIr85AmNTM9-L2gpRhipTm7EtgA0EqmmSvp9sAGvadI2tVftmrmLSpWQ=w300-h500-no",

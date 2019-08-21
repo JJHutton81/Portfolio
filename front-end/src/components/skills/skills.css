@@ -141,10 +141,18 @@ body {
   cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39, auto; 
 } */
 
+.skills-deck-wrap {
+  width: 100%;
+  height: 75.1vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Deck {
   position: absolute;
-  width: 100vw;
-  height: 100vh;
+  width: 99vw;
+  height: 70vh;
   will-change: transform;
   display: flex;
   align-items: center;
@@ -156,7 +164,7 @@ body {
   background-size: auto 85%;
   background-repeat: no-repeat;
   background-position: center center;
-  width: 45vh;
+  width: 75%;
   max-width: 300px;
   height: 85vh;
   max-height: 570px;
@@ -165,7 +173,39 @@ body {
   box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
 }
 
+.inst-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.instructions {
+  text-align: center;
+  background-color: #001f3f;
+  color: wheat;
+  font-family: "Stylish", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  overflow: hidden;
+}
+
 /* h1 {
   text-align: center;
   position: absolute
 } */
+
+@media only screen and (max-width: 812px) {
+  .CardImage {
+    height: 65vh;
+    /* width: 80%; */
+  }
+
+  .skills-deck-wrap {
+    height: 68.5vh;
+  }
+/*
+  .Deck {
+    height: 80vh;
+    width: 90%;
+  } */
+}
