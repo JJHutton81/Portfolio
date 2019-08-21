@@ -1,13 +1,13 @@
 @media only screen and (max-width: 800px) {
     .cardWrapper {
-        height: 116vh;
+        height: 126vh;
         display: flex;
     }
 
     .JOBDcard {
         width: 95% !important;
         margin: 3% auto!important;
-        height: 300px !important;
+        height: 360px !important;
         padding: 0 !important;
     }
 
@@ -17,8 +17,8 @@
 
     .BigPop {
         margin: 0 !important;
-        width: 99% !important;
-        height: 100vh !important;
+        width: 100% !important;
+        height: 124vh !important;
     }
 
     .LinkCard {

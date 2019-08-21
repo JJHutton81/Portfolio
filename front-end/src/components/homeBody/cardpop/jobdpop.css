@@ -56,8 +56,8 @@
 }
 
 .BigPop {
-    width: 48vw;
-    height: 76.5vh;
+    width: 45vw;
+    height: 67.5vh;
     position: absolute;
     display: flex;
     flex-direction: column;
