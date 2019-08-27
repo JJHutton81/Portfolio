@@ -90,6 +90,7 @@ body {
 	background-size: cover;
 	position: relative;
 	background-color: rgb(161, 181, 202);
+	overflow: hidden;
 }
 
 .menu-wrap {
