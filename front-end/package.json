@@ -6,7 +6,7 @@
     "axios": "^0.18.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.0",
+    "express": "^4.17.3",
     "glamor": "^2.20.40",
     "nodemailer": "^6.1.1",
     "react": "^16.8.6",
